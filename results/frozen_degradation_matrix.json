@@ -1,0 +1,248 @@
+{
+  "model": "frozen chronos-2 (zero-shot)",
+  "matrix": {
+    "metr_la": {
+      "S1_weekday_to_weekend": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 3.7091,
+            "6": 4.6949,
+            "12": 6.0121
+          },
+          "avg": 4.6779
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 3.3581,
+            "6": 4.5018,
+            "12": 6.5411
+          },
+          "avg": 4.6094
+        },
+        "n_in": 5089,
+        "n_shift": 1695,
+        "rel_degradation": {
+          "h3": -0.0946,
+          "h6": -0.0411,
+          "h12": 0.088,
+          "avg": -0.0146
+        }
+      },
+      "S2_peak_to_offpeak": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 4.3609,
+            "6": 5.7532,
+            "12": 7.5575
+          },
+          "avg": 5.7142
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 3.2601,
+            "6": 4.0927,
+            "12": 5.2845
+          },
+          "avg": 4.0977
+        },
+        "n_in": 1200,
+        "n_shift": 4594,
+        "rel_degradation": {
+          "h3": -0.2524,
+          "h6": -0.2886,
+          "h12": -0.3008,
+          "avg": -0.2829
+        }
+      },
+      "S3_spatial_holdout": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 3.5176,
+            "6": 4.4942,
+            "12": 5.9025
+          },
+          "avg": 4.5025
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 4.1456,
+            "6": 5.3374,
+            "12": 7.0301
+          },
+          "avg": 5.3441
+        },
+        "n_train_sensors": 170,
+        "n_holdout_sensors": 37,
+        "rel_degradation": {
+          "h3": 0.1785,
+          "h6": 0.1876,
+          "h12": 0.191,
+          "avg": 0.1869
+        },
+        "note": "expected ~0: zero-shot TSFM never used the region split"
+      }
+    },
+    "pems_bay": {
+      "S1_weekday_to_weekend": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 1.6358,
+            "6": 2.1954,
+            "12": 2.8717
+          },
+          "avg": 2.1546
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 0.9116,
+            "6": 1.0618,
+            "12": 1.252
+          },
+          "avg": 1.0466
+        },
+        "n_in": 7484,
+        "n_shift": 2825,
+        "rel_degradation": {
+          "h3": -0.4427,
+          "h6": -0.5164,
+          "h12": -0.564,
+          "avg": -0.5142
+        }
+      },
+      "S2_peak_to_offpeak": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 2.1188,
+            "6": 2.9643,
+            "12": 3.9694
+          },
+          "avg": 2.9015
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 1.1365,
+            "6": 1.3895,
+            "12": 1.7019
+          },
+          "avg": 1.3655
+        },
+        "n_in": 1800,
+        "n_shift": 7033,
+        "rel_degradation": {
+          "h3": -0.4636,
+          "h6": -0.5313,
+          "h12": -0.5712,
+          "avg": -0.5294
+        }
+      },
+      "S3_spatial_holdout": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 1.4604,
+            "6": 1.9163,
+            "12": 2.4691
+          },
+          "avg": 1.882
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 1.1926,
+            "6": 1.5367,
+            "12": 1.9548
+          },
+          "avg": 1.5074
+        },
+        "n_train_sensors": 289,
+        "n_holdout_sensors": 36,
+        "rel_degradation": {
+          "h3": -0.1834,
+          "h6": -0.1981,
+          "h12": -0.2083,
+          "avg": -0.199
+        },
+        "note": "expected ~0: zero-shot TSFM never used the region split"
+      }
+    },
+    "largest_sd": {
+      "S1_weekday_to_weekend": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 17.0343,
+            "6": 20.3862,
+            "12": 25.0777
+          },
+          "avg": 20.3248
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 17.7668,
+            "6": 25.4698,
+            "12": 37.9866
+          },
+          "avg": 26.1387
+        },
+        "n_in": 4871,
+        "n_shift": 1902,
+        "rel_degradation": {
+          "h3": 0.043,
+          "h6": 0.2494,
+          "h12": 0.5148,
+          "avg": 0.286
+        }
+      },
+      "S2_peak_to_offpeak": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 22.6206,
+            "6": 26.5196,
+            "12": 32.2003
+          },
+          "avg": 26.1086
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 13.0474,
+            "6": 16.1931,
+            "12": 24.6613
+          },
+          "avg": 17.302
+        },
+        "n_in": 146,
+        "n_shift": 3646,
+        "rel_degradation": {
+          "h3": -0.4232,
+          "h6": -0.3894,
+          "h12": -0.2341,
+          "avg": -0.3373
+        }
+      },
+      "S3_spatial_holdout": {
+        "in_distribution": {
+          "per_horizon": {
+            "3": 17.8334,
+            "6": 22.4534,
+            "12": 29.2922
+          },
+          "avg": 22.5537
+        },
+        "shifted": {
+          "per_horizon": {
+            "3": 13.3592,
+            "6": 16.5175,
+            "12": 21.5068
+          },
+          "avg": 16.6724
+        },
+        "n_train_sensors": 614,
+        "n_holdout_sensors": 102,
+        "rel_degradation": {
+          "h3": -0.2509,
+          "h6": -0.2644,
+          "h12": -0.2658,
+          "avg": -0.2608
+        },
+        "note": "expected ~0: zero-shot TSFM never used the region split"
+      }
+    }
+  }
+}

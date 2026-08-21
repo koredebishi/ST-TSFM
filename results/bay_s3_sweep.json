@@ -1,0 +1,612 @@
+{
+  "host": "ra1-22",
+  "s1_severity": 4.234,
+  "tripwire": 2.117,
+  "ks_swept": [
+    5,
+    8,
+    10,
+    15,
+    20
+  ],
+  "size_window": [
+    0.1,
+    0.3
+  ],
+  "n_candidates_size_ok": 14,
+  "n_passing": 0,
+  "best_size_ok_candidate": {
+    "k": 8,
+    "cluster": 6,
+    "n_sensors": 34,
+    "fraction": 0.1046,
+    "size_ok": true,
+    "tightness_deg": 0.016743,
+    "severity_w1": 1.7321,
+    "passes": false
+  },
+  "passing": [],
+  "verdict": "NO candidate passes at any k -> option B holds, demonstrated",
+  "all_results": [
+    {
+      "k": 5,
+      "cluster": 0,
+      "n_sensors": 105,
+      "fraction": 0.3231,
+      "size_ok": false,
+      "tightness_deg": 0.031742,
+      "severity_w1": 0.7536,
+      "passes": false
+    },
+    {
+      "k": 5,
+      "cluster": 1,
+      "n_sensors": 76,
+      "fraction": 0.2338,
+      "size_ok": true,
+      "tightness_deg": 0.038275,
+      "severity_w1": 0.5275,
+      "passes": false
+    },
+    {
+      "k": 5,
+      "cluster": 2,
+      "n_sensors": 36,
+      "fraction": 0.1108,
+      "size_ok": true,
+      "tightness_deg": 0.019856,
+      "severity_w1": 1.728,
+      "passes": false
+    },
+    {
+      "k": 5,
+      "cluster": 3,
+      "n_sensors": 58,
+      "fraction": 0.1785,
+      "size_ok": true,
+      "tightness_deg": 0.034185,
+      "severity_w1": 0.8267,
+      "passes": false
+    },
+    {
+      "k": 5,
+      "cluster": 4,
+      "n_sensors": 50,
+      "fraction": 0.1538,
+      "size_ok": true,
+      "tightness_deg": 0.038998,
+      "severity_w1": 0.6649,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 0,
+      "n_sensors": 41,
+      "fraction": 0.1262,
+      "size_ok": true,
+      "tightness_deg": 0.022643,
+      "severity_w1": 0.505,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 1,
+      "n_sensors": 80,
+      "fraction": 0.2462,
+      "size_ok": true,
+      "tightness_deg": 0.026864,
+      "severity_w1": 0.8508,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 2,
+      "n_sensors": 35,
+      "fraction": 0.1077,
+      "size_ok": true,
+      "tightness_deg": 0.023257,
+      "severity_w1": 0.6499,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 3,
+      "n_sensors": 31,
+      "fraction": 0.0954,
+      "size_ok": false,
+      "tightness_deg": 0.03082,
+      "severity_w1": 0.9524,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 4,
+      "n_sensors": 32,
+      "fraction": 0.0985,
+      "size_ok": false,
+      "tightness_deg": 0.02191,
+      "severity_w1": 1.3989,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 5,
+      "n_sensors": 31,
+      "fraction": 0.0954,
+      "size_ok": false,
+      "tightness_deg": 0.020553,
+      "severity_w1": 0.5913,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 6,
+      "n_sensors": 34,
+      "fraction": 0.1046,
+      "size_ok": true,
+      "tightness_deg": 0.016743,
+      "severity_w1": 1.7321,
+      "passes": false
+    },
+    {
+      "k": 8,
+      "cluster": 7,
+      "n_sensors": 41,
+      "fraction": 0.1262,
+      "size_ok": true,
+      "tightness_deg": 0.017913,
+      "severity_w1": 1.3285,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 0,
+      "n_sensors": 43,
+      "fraction": 0.1323,
+      "size_ok": true,
+      "tightness_deg": 0.016039,
+      "severity_w1": 0.9731,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 1,
+      "n_sensors": 41,
+      "fraction": 0.1262,
+      "size_ok": true,
+      "tightness_deg": 0.022643,
+      "severity_w1": 0.505,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 2,
+      "n_sensors": 30,
+      "fraction": 0.0923,
+      "size_ok": false,
+      "tightness_deg": 0.013853,
+      "severity_w1": 1.7508,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 3,
+      "n_sensors": 36,
+      "fraction": 0.1108,
+      "size_ok": true,
+      "tightness_deg": 0.016797,
+      "severity_w1": 1.324,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 4,
+      "n_sensors": 27,
+      "fraction": 0.0831,
+      "size_ok": false,
+      "tightness_deg": 0.017515,
+      "severity_w1": 0.7264,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 5,
+      "n_sensors": 32,
+      "fraction": 0.0985,
+      "size_ok": false,
+      "tightness_deg": 0.02191,
+      "severity_w1": 1.3989,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 6,
+      "n_sensors": 29,
+      "fraction": 0.0892,
+      "size_ok": false,
+      "tightness_deg": 0.028625,
+      "severity_w1": 0.8929,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 7,
+      "n_sensors": 32,
+      "fraction": 0.0985,
+      "size_ok": false,
+      "tightness_deg": 0.022865,
+      "severity_w1": 0.5925,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 8,
+      "n_sensors": 33,
+      "fraction": 0.1015,
+      "size_ok": true,
+      "tightness_deg": 0.012028,
+      "severity_w1": 0.7004,
+      "passes": false
+    },
+    {
+      "k": 10,
+      "cluster": 9,
+      "n_sensors": 22,
+      "fraction": 0.0677,
+      "size_ok": false,
+      "tightness_deg": 0.015855,
+      "severity_w1": 0.8009,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 0,
+      "n_sensors": 31,
+      "fraction": 0.0954,
+      "size_ok": false,
+      "tightness_deg": 0.011451,
+      "severity_w1": 0.59,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 1,
+      "n_sensors": 7,
+      "fraction": 0.0215,
+      "size_ok": false,
+      "tightness_deg": 0.014001,
+      "severity_w1": 1.7578,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 2,
+      "n_sensors": 28,
+      "fraction": 0.0862,
+      "size_ok": false,
+      "tightness_deg": 0.015191,
+      "severity_w1": 0.6875,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 3,
+      "n_sensors": 19,
+      "fraction": 0.0585,
+      "size_ok": false,
+      "tightness_deg": 0.014233,
+      "severity_w1": 1.0789,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 4,
+      "n_sensors": 27,
+      "fraction": 0.0831,
+      "size_ok": false,
+      "tightness_deg": 0.017515,
+      "severity_w1": 0.7264,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 5,
+      "n_sensors": 22,
+      "fraction": 0.0677,
+      "size_ok": false,
+      "tightness_deg": 0.012869,
+      "severity_w1": 0.9629,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 6,
+      "n_sensors": 22,
+      "fraction": 0.0677,
+      "size_ok": false,
+      "tightness_deg": 0.015193,
+      "severity_w1": 0.8005,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 7,
+      "n_sensors": 30,
+      "fraction": 0.0923,
+      "size_ok": false,
+      "tightness_deg": 0.013853,
+      "severity_w1": 1.7508,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 8,
+      "n_sensors": 11,
+      "fraction": 0.0338,
+      "size_ok": false,
+      "tightness_deg": 0.01073,
+      "severity_w1": 1.9045,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 9,
+      "n_sensors": 20,
+      "fraction": 0.0615,
+      "size_ok": false,
+      "tightness_deg": 0.012279,
+      "severity_w1": 0.7506,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 10,
+      "n_sensors": 42,
+      "fraction": 0.1292,
+      "size_ok": true,
+      "tightness_deg": 0.01576,
+      "severity_w1": 1.0272,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 11,
+      "n_sensors": 10,
+      "fraction": 0.0308,
+      "size_ok": false,
+      "tightness_deg": 0.014357,
+      "severity_w1": 1.1167,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 12,
+      "n_sensors": 16,
+      "fraction": 0.0492,
+      "size_ok": false,
+      "tightness_deg": 0.018685,
+      "severity_w1": 1.7629,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 13,
+      "n_sensors": 13,
+      "fraction": 0.04,
+      "size_ok": false,
+      "tightness_deg": 0.011305,
+      "severity_w1": 0.6862,
+      "passes": false
+    },
+    {
+      "k": 15,
+      "cluster": 14,
+      "n_sensors": 27,
+      "fraction": 0.0831,
+      "size_ok": false,
+      "tightness_deg": 0.010843,
+      "severity_w1": 1.3663,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 0,
+      "n_sensors": 22,
+      "fraction": 0.0677,
+      "size_ok": false,
+      "tightness_deg": 0.012869,
+      "severity_w1": 0.9629,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 1,
+      "n_sensors": 12,
+      "fraction": 0.0369,
+      "size_ok": false,
+      "tightness_deg": 0.008735,
+      "severity_w1": 1.8016,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 2,
+      "n_sensors": 13,
+      "fraction": 0.04,
+      "size_ok": false,
+      "tightness_deg": 0.011305,
+      "severity_w1": 0.6862,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 3,
+      "n_sensors": 6,
+      "fraction": 0.0185,
+      "size_ok": false,
+      "tightness_deg": 0.012713,
+      "severity_w1": 1.1369,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 4,
+      "n_sensors": 19,
+      "fraction": 0.0585,
+      "size_ok": false,
+      "tightness_deg": 0.011047,
+      "severity_w1": 1.3992,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 5,
+      "n_sensors": 16,
+      "fraction": 0.0492,
+      "size_ok": false,
+      "tightness_deg": 0.009287,
+      "severity_w1": 0.7695,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 6,
+      "n_sensors": 10,
+      "fraction": 0.0308,
+      "size_ok": false,
+      "tightness_deg": 0.008533,
+      "severity_w1": 1.0522,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 7,
+      "n_sensors": 22,
+      "fraction": 0.0677,
+      "size_ok": false,
+      "tightness_deg": 0.010376,
+      "severity_w1": 2.2723,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 8,
+      "n_sensors": 26,
+      "fraction": 0.08,
+      "size_ok": false,
+      "tightness_deg": 0.009347,
+      "severity_w1": 1.6432,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 9,
+      "n_sensors": 29,
+      "fraction": 0.0892,
+      "size_ok": false,
+      "tightness_deg": 0.011114,
+      "severity_w1": 0.9498,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 10,
+      "n_sensors": 10,
+      "fraction": 0.0308,
+      "size_ok": false,
+      "tightness_deg": 0.012343,
+      "severity_w1": 1.4028,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 11,
+      "n_sensors": 8,
+      "fraction": 0.0246,
+      "size_ok": false,
+      "tightness_deg": 0.010523,
+      "severity_w1": 1.7256,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 12,
+      "n_sensors": 12,
+      "fraction": 0.0369,
+      "size_ok": false,
+      "tightness_deg": 0.020091,
+      "severity_w1": 1.2372,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 13,
+      "n_sensors": 25,
+      "fraction": 0.0769,
+      "size_ok": false,
+      "tightness_deg": 0.017056,
+      "severity_w1": 0.778,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 14,
+      "n_sensors": 15,
+      "fraction": 0.0462,
+      "size_ok": false,
+      "tightness_deg": 0.011229,
+      "severity_w1": 1.3021,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 15,
+      "n_sensors": 15,
+      "fraction": 0.0462,
+      "size_ok": false,
+      "tightness_deg": 0.014367,
+      "severity_w1": 1.7346,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 16,
+      "n_sensors": 14,
+      "fraction": 0.0431,
+      "size_ok": false,
+      "tightness_deg": 0.014392,
+      "severity_w1": 2.4474,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 17,
+      "n_sensors": 21,
+      "fraction": 0.0646,
+      "size_ok": false,
+      "tightness_deg": 0.007247,
+      "severity_w1": 1.6984,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 18,
+      "n_sensors": 13,
+      "fraction": 0.04,
+      "size_ok": false,
+      "tightness_deg": 0.008881,
+      "severity_w1": 1.8673,
+      "passes": false
+    },
+    {
+      "k": 20,
+      "cluster": 19,
+      "n_sensors": 17,
+      "fraction": 0.0523,
+      "size_ok": false,
+      "tightness_deg": 0.007444,
+      "severity_w1": 0.6056,
+      "passes": false
+    }
+  ]
+}

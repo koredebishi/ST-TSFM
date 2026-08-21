@@ -1,0 +1,82 @@
+{
+  "model": "frozen timesfm-2.5 (zero-shot)",
+  "dataset": "pems_bay",
+  "cell": {
+    "S1_weekday_to_weekend": {
+      "in_distribution": {
+        "per_horizon": {
+          "3": 1.5727,
+          "6": 2.0427,
+          "12": 2.4704
+        },
+        "avg": 1.9622
+      },
+      "shifted": {
+        "per_horizon": {
+          "3": 0.8878,
+          "6": 1.0314,
+          "12": 1.2192
+        },
+        "avg": 1.0178
+      },
+      "n_in": 7484,
+      "n_shift": 2825,
+      "rel_degradation": {
+        "h3": -0.4355,
+        "h6": -0.4951,
+        "h12": -0.5065,
+        "avg": -0.4813
+      }
+    },
+    "S2_peak_to_offpeak": {
+      "in_distribution": {
+        "per_horizon": {
+          "3": 2.0411,
+          "6": 2.8304,
+          "12": 3.6813
+        },
+        "avg": 2.7452
+      },
+      "shifted": {
+        "per_horizon": {
+          "3": 1.094,
+          "6": 1.2854,
+          "12": 1.4609
+        },
+        "avg": 1.2429
+      },
+      "n_in": 1800,
+      "n_shift": 7033,
+      "rel_degradation": {
+        "h3": -0.464,
+        "h6": -0.5459,
+        "h12": -0.6032,
+        "avg": -0.5472
+      }
+    },
+    "S3_spatial_holdout": {
+      "in_distribution": {
+        "per_horizon": {
+          "3": 1.4085,
+          "6": 1.7958,
+          "12": 2.1643
+        },
+        "avg": 1.7327
+      },
+      "shifted": {
+        "per_horizon": {
+          "3": 1.1397,
+          "6": 1.436,
+          "12": 1.7126
+        },
+        "avg": 1.3844
+      },
+      "rel_degradation": {
+        "h3": -0.1908,
+        "h6": -0.2004,
+        "h12": -0.2087,
+        "avg": -0.201
+      }
+    }
+  }
+}

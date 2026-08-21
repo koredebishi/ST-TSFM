@@ -1,0 +1,58 @@
+{
+ "spec": "decisions.md D37 E4",
+ "selection_rule": "best masked MAE per regime on validation",
+ "candidates": [
+  "ha",
+  "chronos2",
+  "timesfm"
+ ],
+ "selected": {
+  "weekday": "chronos2",
+  "weekend": "ha"
+ },
+ "validation_mae": {
+  "weekday": {
+   "ha": 20.75762584839661,
+   "chronos2": 17.95718720295419,
+   "timesfm": 19.505108681228865
+  },
+  "weekend": {
+   "ha": 18.014892527871297,
+   "chronos2": 28.94179967793386,
+   "timesfm": 24.550432571744587
+  }
+ },
+ "n_val_windows": 7003,
+ "mixed_windows_note": "test windows whose targets are not all-weekend route to the weekday model",
+ "test": {
+  "ha": {
+   "full_test": 27.932704822183673,
+   "weekend_pool": 21.573663160771435,
+   "weekday_pool": 30.31708173193954
+  },
+  "chronos2": {
+   "full_test": 21.703161026052168,
+   "weekend_pool": 26.138668587663368,
+   "weekday_pool": 20.04002963360838
+  },
+  "timesfm": {
+   "full_test": 22.1971828912429,
+   "weekend_pool": 23.82451155700306,
+   "weekday_pool": 21.5870021278792
+  },
+  "router": {
+   "full_test": 20.45825968177891,
+   "weekend_pool": 21.573663160771435,
+   "weekday_pool": 20.04002963360838
+  }
+ },
+ "monolithic_banked_std": {
+  "ha": 27.9327,
+  "arima": 55.4276,
+  "dcrnn": 21.2034,
+  "gwnet": 18.4989,
+  "chronos2": 21.7032,
+  "timesfm": 22.1972
+ },
+ "job": "47327011"
+}

@@ -1,0 +1,114 @@
+{
+ "spec": "batch-independence check for the frozen backbones",
+ "dataset": "largest_sd",
+ "source": "LargeST-SD/2019 (his.npz + idx_test.npy)",
+ "anchor": 28024,
+ "context_len": 512,
+ "chunk": 256,
+ "n_sensors": 716,
+ "seed": 2023,
+ "probe_sensors": [
+  0,
+  7,
+  42,
+  128,
+  255
+ ],
+ "job": "47558832",
+ "host": "b8-3",
+ "models": {
+  "chronos2": {
+   "meta": {
+    "model_id": "amazon/chronos-2",
+    "api": "Chronos2Pipeline",
+    "package": "chronos-forecasting==2.2.2"
+   },
+   "per_sensor": {
+    "0": {
+     "max_abs_alone_vs_batch": 1.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.005695301573723555,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 175.5833282470703
+    },
+    "7": {
+     "max_abs_alone_vs_batch": 2.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.019253911450505257,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 103.875
+    },
+    "42": {
+     "max_abs_alone_vs_batch": 2.5,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.01862197369337082,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 134.25
+    },
+    "128": {
+     "max_abs_alone_vs_batch": 1.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.006737787742167711,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 148.4166717529297
+    },
+    "255": {
+     "max_abs_alone_vs_batch": 2.5,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.04923076927661896,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 50.78125
+    }
+   },
+   "worst_max_abs_alone_vs_batch": 2.5,
+   "worst_max_abs_batch_vs_perm": 0.0
+  },
+  "timesfm": {
+   "meta": {
+    "model_id": "google/timesfm-2.5-200m-pytorch",
+    "api": "timesfm-2.x",
+    "package": "timesfm==2.0.1",
+    "load_fallback_errors": null
+   },
+   "per_sensor": {
+    "0": {
+     "max_abs_alone_vs_batch": 0.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.0,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 164.8701934814453
+    },
+    "7": {
+     "max_abs_alone_vs_batch": 0.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.0,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 109.99588012695312
+    },
+    "42": {
+     "max_abs_alone_vs_batch": 0.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.0,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 133.21119689941406
+    },
+    "128": {
+     "max_abs_alone_vs_batch": 0.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.0,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 146.96685791015625
+    },
+    "255": {
+     "max_abs_alone_vs_batch": 0.0,
+     "max_abs_batch_vs_perm": 0.0,
+     "rel_alone_vs_batch": 0.0,
+     "rel_batch_vs_perm": 0.0,
+     "forecast_scale": 51.34279251098633
+    }
+   },
+   "worst_max_abs_alone_vs_batch": 0.0,
+   "worst_max_abs_batch_vs_perm": 0.0
+  }
+ }
+}

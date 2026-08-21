@@ -1,0 +1,101 @@
+{
+  "host": "ra1-22",
+  "severities": {
+    "metr_la": {
+      "S1": {
+        "split": "S1_weekday_to_weekend",
+        "dataset": "metr_la",
+        "severity_w1_mean": 4.250400491819458,
+        "severity_w1_median": 4.013719076767047,
+        "severity_w1_q25": 2.34734360193485,
+        "severity_w1_q75": 5.902622090472422,
+        "n_sensors_used": 207,
+        "n_sensors_skipped": 0,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      },
+      "S2": {
+        "split": "S2_peak_to_offpeak",
+        "dataset": "metr_la",
+        "severity_w1_mean": 6.802416712192568,
+        "severity_w1_median": 7.029501456656227,
+        "severity_w1_q25": 2.87162817514258,
+        "severity_w1_q75": 9.782351160029988,
+        "n_sensors_used": 207,
+        "n_sensors_skipped": 0,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      },
+      "S3": {
+        "split": "S3_spatial_holdout",
+        "dataset": "metr_la",
+        "severity_w1_pooled": 2.7972939182480574,
+        "n_values_train_region": 1029113,
+        "n_values_holdout": 219367,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      }
+    },
+    "pems_bay": {
+      "S1": {
+        "split": "S1_weekday_to_weekend",
+        "dataset": "pems_bay",
+        "severity_w1_mean": 4.234277586032742,
+        "severity_w1_median": 3.8481288580246917,
+        "severity_w1_q25": 2.510146604938271,
+        "severity_w1_q75": 5.739116512345679,
+        "n_sensors_used": 325,
+        "n_sensors_skipped": 0,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      },
+      "S2": {
+        "split": "S2_peak_to_offpeak",
+        "dataset": "pems_bay",
+        "severity_w1_mean": 7.383685786804719,
+        "severity_w1_median": 7.206930574564012,
+        "severity_w1_q25": 4.682694564827877,
+        "severity_w1_q75": 10.268080383534858,
+        "n_sensors_used": 325,
+        "n_sensors_skipped": 0,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      },
+      "S3": {
+        "split": "S3_spatial_holdout",
+        "dataset": "pems_bay",
+        "severity_w1_pooled": 1.7280373765786305,
+        "n_values_train_region": 3014086,
+        "n_values_holdout": 375447,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      }
+    },
+    "largest_sd": {
+      "S1": {
+        "split": "S1_weekday_to_weekend",
+        "dataset": "largest_sd",
+        "severity_w1_mean": 55.08815787673622,
+        "severity_w1_median": 51.24346664761805,
+        "severity_w1_q25": 34.64129747395359,
+        "severity_w1_q75": 73.71449460673355,
+        "n_sensors_used": 692,
+        "n_sensors_skipped": 24,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      },
+      "S2": {
+        "split": "S2_peak_to_offpeak",
+        "dataset": "largest_sd",
+        "severity_w1_mean": 142.21460406912158,
+        "severity_w1_median": 137.90774926824668,
+        "severity_w1_q25": 102.26986860975693,
+        "severity_w1_q75": 181.6619517950332,
+        "n_sensors_used": 692,
+        "n_sensors_skipped": 24,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      },
+      "S3": {
+        "split": "S3_spatial_holdout",
+        "dataset": "largest_sd",
+        "severity_w1_pooled": 68.34714764990912,
+        "n_values_train_region": 4173706,
+        "n_values_holdout": 685226,
+        "spec": "paper_plan \u00a75.1 + decisions.md D3"
+      }
+    }
+  }
+}

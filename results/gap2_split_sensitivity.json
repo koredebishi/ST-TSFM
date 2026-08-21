@@ -1,0 +1,314 @@
+{
+  "spec": "paper_plan FINAL PAPER SCOPE GAP-2; base defs = D8",
+  "S2_peak_variants": {
+    "base_[7,10)+[16,19)": {
+      "metr_la": {
+        "tau": 0.905,
+        "ci": [
+          0.81,
+          0.907
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.2861,
+          "timesfm": -0.357
+        },
+        "n_id": 1200,
+        "n_shift": 4594
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          0.905,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.5294,
+          "timesfm": -0.5472
+        },
+        "n_id": 1800,
+        "n_shift": 7033
+      },
+      "largest_sd": {
+        "tau": 0.867,
+        "ci": [
+          0.733,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.3331,
+          "timesfm": -0.3504
+        },
+        "n_id": 145,
+        "n_shift": 3637
+      }
+    },
+    "wide_[6,11)+[15,20)": {
+      "metr_la": {
+        "tau": 1.0,
+        "ci": [
+          0.905,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.3671,
+          "timesfm": -0.3727
+        },
+        "n_id": 2352,
+        "n_shift": 3442
+      },
+      "pems_bay": {
+        "tau": 0.81,
+        "ci": [
+          0.714,
+          0.81
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.6114,
+          "timesfm": -0.6049
+        },
+        "n_id": 3531,
+        "n_shift": 5293
+      },
+      "largest_sd": {
+        "tau": 0.867,
+        "ci": [
+          0.867,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.4614,
+          "timesfm": -0.4702
+        },
+        "n_id": 1305,
+        "n_shift": 2473
+      }
+    },
+    "narrow_[7,9)+[16,18)": {
+      "metr_la": {
+        "tau": 1.0,
+        "ci": [
+          0.905,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.2806,
+          "timesfm": -0.3419
+        },
+        "n_id": 624,
+        "n_shift": 5170
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.4754,
+          "timesfm": -0.4912
+        },
+        "n_id": 936,
+        "n_shift": 7899
+      },
+      "largest_sd": {
+        "error": "empty slice"
+      }
+    },
+    "shifted_[8,11)+[17,20)": {
+      "metr_la": {
+        "tau": 0.905,
+        "ci": [
+          0.81,
+          0.905
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.2558,
+          "timesfm": -0.2985
+        },
+        "n_id": 1200,
+        "n_shift": 4594
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.5013,
+          "timesfm": -0.4953
+        },
+        "n_id": 1803,
+        "n_shift": 7021
+      },
+      "largest_sd": {
+        "tau": 1.0,
+        "ci": [
+          0.733,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.2701,
+          "timesfm": -0.2521
+        },
+        "n_id": 145,
+        "n_shift": 3641
+      }
+    }
+  },
+  "S3_k_variants": {
+    "k=4": {
+      "metr_la": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.1845,
+          "timesfm": 0.1981
+        },
+        "n_heldout_sensors": 44
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.1207,
+          "timesfm": -0.1204
+        },
+        "n_heldout_sensors": 95
+      },
+      "largest_sd": {
+        "tau": 1.0,
+        "ci": [
+          0.733,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.1463,
+          "timesfm": 0.1681
+        },
+        "n_heldout_sensors": 272
+      }
+    },
+    "k=5": {
+      "metr_la": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.1956,
+          "timesfm": 0.2155
+        },
+        "n_heldout_sensors": 37
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.199,
+          "timesfm": -0.201
+        },
+        "n_heldout_sensors": 36
+      },
+      "largest_sd": {
+        "tau": 1.0,
+        "ci": [
+          0.867,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.2667,
+          "timesfm": -0.2657
+        },
+        "n_heldout_sensors": 102
+      }
+    },
+    "k=6": {
+      "metr_la": {
+        "tau": 0.905,
+        "ci": [
+          0.81,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.1824,
+          "timesfm": 0.2233
+        },
+        "n_heldout_sensors": 25
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.199,
+          "timesfm": -0.201
+        },
+        "n_heldout_sensors": 36
+      },
+      "largest_sd": {
+        "tau": 1.0,
+        "ci": [
+          0.863,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.1924,
+          "timesfm": 0.2142
+        },
+        "n_heldout_sensors": 230
+      }
+    },
+    "k=8": {
+      "metr_la": {
+        "tau": 0.905,
+        "ci": [
+          0.81,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.2286,
+          "timesfm": 0.2778
+        },
+        "n_heldout_sensors": 22
+      },
+      "pems_bay": {
+        "tau": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": -0.2132,
+          "timesfm": -0.2145
+        },
+        "n_heldout_sensors": 34
+      },
+      "largest_sd": {
+        "tau": 1.0,
+        "ci": [
+          0.997,
+          1.0
+        ],
+        "tsfm_rel_degradation": {
+          "chronos2": 0.1456,
+          "timesfm": 0.1597
+        },
+        "n_heldout_sensors": 167
+      }
+    }
+  },
+  "host": "c5-14"
+}

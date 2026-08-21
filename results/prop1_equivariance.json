@@ -1,0 +1,263 @@
+{
+  "claim": "MAE(f(a*x+b), a*y+b) == a * MAE(f(x), y) (Prop 1 ii/iii \u2014 the metric-level statement)",
+  "note": "elementwise devs are bf16 quantization, sinh-amplified on tail quantiles; a=2 rows are BITWISE exact (power-of-two scaling = exponent shift in bf16). See D14 addendum + prop1 note caveats.",
+  "checkpoint": "amazon/chronos-2 snapshot 29ec3766 (use_arcsinh=true \u2014 inside normalized domain, equivariance unaffected; see prop1 note)",
+  "worst_mae_ratio_dev": 0.00782,
+  "ratio_tol": 0.02,
+  "PASS": true,
+  "rows": [
+    {
+      "anchor": 28024,
+      "a": 1.0,
+      "b": 10.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 17.364,
+      "mae_ratio_vs_a": 1.000039,
+      "max_elem_dev_in_window_scales": 0.0105
+    },
+    {
+      "anchor": 28024,
+      "a": 1.0,
+      "b": 100.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 17.3616,
+      "mae_ratio_vs_a": 0.9999,
+      "max_elem_dev_in_window_scales": 0.0118
+    },
+    {
+      "anchor": 28024,
+      "a": 1.0,
+      "b": 1000.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 17.4991,
+      "mae_ratio_vs_a": 1.00782,
+      "max_elem_dev_in_window_scales": 0.0249
+    },
+    {
+      "anchor": 28024,
+      "a": 1.0,
+      "b": -100.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 17.364,
+      "mae_ratio_vs_a": 1.000041,
+      "max_elem_dev_in_window_scales": 0.0105
+    },
+    {
+      "anchor": 28024,
+      "a": 2.0,
+      "b": 0.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 34.7266,
+      "mae_ratio_vs_a": 1.0,
+      "max_elem_dev_in_window_scales": 0.0
+    },
+    {
+      "anchor": 28024,
+      "a": 10.0,
+      "b": 0.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 173.6338,
+      "mae_ratio_vs_a": 1.000005,
+      "max_elem_dev_in_window_scales": 0.0167
+    },
+    {
+      "anchor": 28024,
+      "a": 2.0,
+      "b": 500.0,
+      "mae_base": 17.3633,
+      "mae_transformed": 34.7405,
+      "mae_ratio_vs_a": 1.0004,
+      "max_elem_dev_in_window_scales": 0.0144
+    },
+    {
+      "anchor": 29972,
+      "a": 1.0,
+      "b": 10.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 52.8503,
+      "mae_ratio_vs_a": 0.999924,
+      "max_elem_dev_in_window_scales": 0.0311
+    },
+    {
+      "anchor": 29972,
+      "a": 1.0,
+      "b": 100.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 52.8591,
+      "mae_ratio_vs_a": 1.000089,
+      "max_elem_dev_in_window_scales": 0.0207
+    },
+    {
+      "anchor": 29972,
+      "a": 1.0,
+      "b": 1000.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 52.9037,
+      "mae_ratio_vs_a": 1.000935,
+      "max_elem_dev_in_window_scales": 0.0414
+    },
+    {
+      "anchor": 29972,
+      "a": 1.0,
+      "b": -100.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 52.8559,
+      "mae_ratio_vs_a": 1.00003,
+      "max_elem_dev_in_window_scales": 0.0207
+    },
+    {
+      "anchor": 29972,
+      "a": 2.0,
+      "b": 0.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 105.7087,
+      "mae_ratio_vs_a": 1.0,
+      "max_elem_dev_in_window_scales": 0.0
+    },
+    {
+      "anchor": 29972,
+      "a": 10.0,
+      "b": 0.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 528.4623,
+      "mae_ratio_vs_a": 0.999847,
+      "max_elem_dev_in_window_scales": 0.0249
+    },
+    {
+      "anchor": 29972,
+      "a": 2.0,
+      "b": 500.0,
+      "mae_base": 52.8543,
+      "mae_transformed": 105.7374,
+      "mae_ratio_vs_a": 1.000272,
+      "max_elem_dev_in_window_scales": 0.0311
+    },
+    {
+      "anchor": 31429,
+      "a": 1.0,
+      "b": 10.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 22.1926,
+      "mae_ratio_vs_a": 1.000064,
+      "max_elem_dev_in_window_scales": 0.0109
+    },
+    {
+      "anchor": 31429,
+      "a": 1.0,
+      "b": 100.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 22.1988,
+      "mae_ratio_vs_a": 1.000347,
+      "max_elem_dev_in_window_scales": 0.0218
+    },
+    {
+      "anchor": 31429,
+      "a": 1.0,
+      "b": 1000.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 22.2448,
+      "mae_ratio_vs_a": 1.002416,
+      "max_elem_dev_in_window_scales": 0.0437
+    },
+    {
+      "anchor": 31429,
+      "a": 1.0,
+      "b": -100.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 22.1897,
+      "mae_ratio_vs_a": 0.999936,
+      "max_elem_dev_in_window_scales": 0.0218
+    },
+    {
+      "anchor": 31429,
+      "a": 2.0,
+      "b": 0.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 44.3823,
+      "mae_ratio_vs_a": 1.0,
+      "max_elem_dev_in_window_scales": 0.0
+    },
+    {
+      "anchor": 31429,
+      "a": 10.0,
+      "b": 0.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 221.9728,
+      "mae_ratio_vs_a": 1.000276,
+      "max_elem_dev_in_window_scales": 0.0197
+    },
+    {
+      "anchor": 31429,
+      "a": 2.0,
+      "b": 500.0,
+      "mae_base": 22.1911,
+      "mae_transformed": 44.3929,
+      "mae_ratio_vs_a": 1.00024,
+      "max_elem_dev_in_window_scales": 0.0109
+    },
+    {
+      "anchor": 33377,
+      "a": 1.0,
+      "b": 10.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 28.7694,
+      "mae_ratio_vs_a": 0.99958,
+      "max_elem_dev_in_window_scales": 0.0105
+    },
+    {
+      "anchor": 33377,
+      "a": 1.0,
+      "b": 100.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 28.787,
+      "mae_ratio_vs_a": 1.000191,
+      "max_elem_dev_in_window_scales": 0.021
+    },
+    {
+      "anchor": 33377,
+      "a": 1.0,
+      "b": 1000.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 28.8559,
+      "mae_ratio_vs_a": 1.002585,
+      "max_elem_dev_in_window_scales": 0.021
+    },
+    {
+      "anchor": 33377,
+      "a": 1.0,
+      "b": -100.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 28.7728,
+      "mae_ratio_vs_a": 0.999698,
+      "max_elem_dev_in_window_scales": 0.0105
+    },
+    {
+      "anchor": 33377,
+      "a": 2.0,
+      "b": 0.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 57.563,
+      "mae_ratio_vs_a": 1.0,
+      "max_elem_dev_in_window_scales": 0.0
+    },
+    {
+      "anchor": 33377,
+      "a": 10.0,
+      "b": 0.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 287.7706,
+      "mae_ratio_vs_a": 0.999845,
+      "max_elem_dev_in_window_scales": 0.0252
+    },
+    {
+      "anchor": 33377,
+      "a": 2.0,
+      "b": 500.0,
+      "mae_base": 28.7815,
+      "mae_transformed": 57.6245,
+      "mae_ratio_vs_a": 1.001068,
+      "max_elem_dev_in_window_scales": 0.0105
+    }
+  ],
+  "host": "b7-1"
+}
