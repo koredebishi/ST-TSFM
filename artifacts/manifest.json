@@ -1,0 +1,235 @@
+{
+ "about": "Saved forecasts behind artifacts/results/. They are not distributed (3.8 GB). scripts/make_results.py reads them from forecasts/<model>/<dataset>/y_pred.npy (or ST_TSFM_FORECASTS). Each file is float32, shape (windows, 12, sensors). The hashes identify the exact files we used; a GPU rerun will be close but not bit-identical.",
+ "files":
+ [
+  {
+   "file": "ha/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "022c8d8301fe065130cee7ad494a03f7116a3c3988e8af6904caf36d12cbf19f",
+   "note": "test windows 0..6849; saved targets match, mean |diff| 4.8e-07"
+  },
+  {
+   "file": "arima/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "9846ebb3680719c1a44f6fa9ffeec036c85ef981ecba872fc851c8049e3db441",
+   "note": "test windows 0..6849; saved targets match, mean |diff| 4.8e-07"
+  },
+  {
+   "file": "dcrnn/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "f8ec99f555f0721cd680e82c025d7fe153e0c45d55f5acf2890b06a3eb0b333d",
+   "note": "test windows 0..6849 (padding of 62 rows cut); saved targets match, mean |diff| 6.4e-07"
+  },
+  {
+   "file": "gwnet/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "e39ab454f310d61495c4d77513a84e86e35a621edef1a92e1ade9f49c3b1f71f",
+   "note": "test windows 0..6849; saved targets match, mean |diff| 4.8e-07"
+  },
+  {
+   "file": "staeformer/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "c17af97295550d9039461cc189e0c77bea8c88b42cbe7d243d36f5556ba20dea",
+   "note": "test windows 0..6849; saved targets match, mean |diff| 4.8e-07"
+  },
+  {
+   "file": "chronos2/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "7014ece2efd5988c66b5beeeddc94f4a1da85fd60716ed73ea41dce4982349d1",
+   "note": "test windows 0..6849"
+  },
+  {
+   "file": "timesfm/metr_la/y_pred.npy",
+   "shape": [
+    6850,
+    12,
+    207
+   ],
+   "sha256": "ea6c0b565a60f3a4ce0b5e61cbd561d16e7fb2489a794fef740ac43b68b18bcc",
+   "note": "test windows 0..6849"
+  },
+  {
+   "file": "ha/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "523ca2b3789a5a85ce660c4c9eb8e06859cc2b76d193ec94e2dbba86dc5670e0",
+   "note": "test windows 0..10418; saved targets match, mean |diff| 1.5e-06"
+  },
+  {
+   "file": "arima/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "0f5ab18a51a7320d0b0f2cfc0173ab5ec3f7e53f0bf77c145ce29c97ce225ff7",
+   "note": "test windows 0..10418; saved targets match, mean |diff| 1.5e-06"
+  },
+  {
+   "file": "dcrnn/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "1e32d5288bf5e4139f55d7e9b7386b800145934051f87fd2b391e668fc9b1700",
+   "note": "test windows 0..10418 (padding of 13 rows cut); saved targets match, mean |diff| 1.5e-06"
+  },
+  {
+   "file": "gwnet/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "02f9266f9df00cf9b789448402d6006cee89aa8f47a3f9d620a573426f1ec6a7",
+   "note": "test windows 0..10418; saved targets match, mean |diff| 1.5e-06"
+  },
+  {
+   "file": "staeformer/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "769e02f035ca814f2c35c895d211d0221a94035d6cd3eb9c34e95e517bc916f2",
+   "note": "test windows 0..10418; saved targets match, mean |diff| 1.5e-06"
+  },
+  {
+   "file": "chronos2/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "95ce3ecb4c2e25a36c34cdabede6412926d17fae492c0b2a996d5bf48e831895",
+   "note": "test windows 0..10418"
+  },
+  {
+   "file": "timesfm/pems_bay/y_pred.npy",
+   "shape": [
+    10419,
+    12,
+    325
+   ],
+   "sha256": "5f8e1651e001ae8848508ab2617b49c1c85d40b7347d831c895ef70165cfcd49",
+   "note": "test windows 0..10418"
+  },
+  {
+   "file": "ha/largest_sd/y_pred.npy",
+   "shape": [
+    7004,
+    12,
+    716
+   ],
+   "sha256": "7fac3d022e715a227f385adf99d64d204c8bbc8b242643f1f9c10c445f667bff",
+   "note": "test windows 0..7003; saved targets match, mean |diff| 1.6e-15"
+  },
+  {
+   "file": "arima/largest_sd/y_pred.npy",
+   "shape": [
+    7004,
+    12,
+    716
+   ],
+   "sha256": "57ea7e63031690eb7039dbe2f7b7d8b3a4e43e054c5de0287f3a96a9c26fb826",
+   "note": "test windows 0..7003; saved targets match, mean |diff| 1.6e-15"
+  },
+  {
+   "file": "dcrnn/largest_sd/y_pred.npy",
+   "shape": [
+    6976,
+    12,
+    716
+   ],
+   "sha256": "89a66a492f1a01d1d28cc17d8fcb72a03444ae346400874019bd6ecc7e8b15e3",
+   "note": "test windows 0..6975; saved targets match, mean |diff| 1.7e-06"
+  },
+  {
+   "file": "gwnet/largest_sd/y_pred.npy",
+   "shape": [
+    6976,
+    12,
+    716
+   ],
+   "sha256": "14c3893728503baa61ee81b5dc5a2a6490b74f079bcf75f495ad5062e7c3b206",
+   "note": "test windows 0..6975; saved targets match, mean |diff| 1.7e-06"
+  },
+  {
+   "file": "staeformer/largest_sd/y_pred.npy",
+   "shape": [
+    7004,
+    12,
+    716
+   ],
+   "sha256": "777c7148fd836c2a760e4199ae1d12b8c7f1be66d5ba66ebb9eb0c53f5489b33",
+   "note": "test windows 0..7003; saved targets match, mean |diff| 1.6e-15"
+  },
+  {
+   "file": "chronos2/largest_sd/y_pred.npy",
+   "shape": [
+    7004,
+    12,
+    716
+   ],
+   "sha256": "7f3c1715b6552f23a7b588191b068b33afb384cc89eea4345c8ebb263a36cd75",
+   "note": "test windows 0..7003"
+  },
+  {
+   "file": "timesfm/largest_sd/y_pred.npy",
+   "shape": [
+    7004,
+    12,
+    716
+   ],
+   "sha256": "0ee581ba36790dc1b1773d16dfc22686219feaa151b8baf35839a2bcca2e1185",
+   "note": "test windows 0..7003"
+  },
+  {
+   "file": "chronos2/largest_sd/y_pred_val.npy",
+   "shape": [
+    7003,
+    12,
+    716
+   ],
+   "sha256": "e6def4ef157d9474332605544b1059b7c1aa53f31b25485aaeb0f1b61e17b15b",
+   "note": "validation windows (router selection)"
+  },
+  {
+   "file": "timesfm/largest_sd/y_pred_val.npy",
+   "shape": [
+    7003,
+    12,
+    716
+   ],
+   "sha256": "36b15d56df0e033ab7eca8c202027c918d75babfbb1a2d14b7a496afee96f23d",
+   "note": "validation windows (router selection)"
+  }
+ ]}

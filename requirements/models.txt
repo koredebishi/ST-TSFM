@@ -1,0 +1,6 @@
+# Running the models again (GPU). Install analysis.txt first.
+torch==2.12.0
+chronos-forecasting==2.2.2
+timesfm==2.0.1
+statsmodels
+joblib

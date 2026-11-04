@@ -1,0 +1,227 @@
+{
+ "metr_la": {
+  "S1": {
+   "tau": 0.9047619047619049,
+   "interval": [
+    0.9047619047619049,
+    0.9047619047619049
+   ],
+   "ranked_in_dist": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "ha",
+    "chronos2",
+    "arima"
+   ],
+   "ranked_shifted": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "ha",
+    "timesfm",
+    "chronos2",
+    "arima"
+   ]
+  },
+  "S2": {
+   "tau": 0.9047619047619049,
+   "interval": [
+    0.8095238095238096,
+    0.9071428571428551
+   ],
+   "ranked_in_dist": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "ha",
+    "arima"
+   ],
+   "ranked_shifted": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "ha",
+    "chronos2",
+    "arima"
+   ]
+  },
+  "S3": {
+   "tau": 1.0,
+   "interval": [
+    1.0,
+    1.0
+   ],
+   "ranked_in_dist": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "ha",
+    "chronos2",
+    "arima"
+   ],
+   "ranked_shifted": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "ha",
+    "chronos2",
+    "arima"
+   ]
+  }
+ },
+ "pems_bay": {
+  "S1": {
+   "tau": 1.0,
+   "interval": [
+    0.9047619047619049,
+    1.0
+   ],
+   "ranked_in_dist": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "arima",
+    "ha"
+   ],
+   "ranked_shifted": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "arima",
+    "ha"
+   ]
+  },
+  "S2": {
+   "tau": 1.0,
+   "interval": [
+    0.9047619047619049,
+    1.0
+   ],
+   "ranked_in_dist": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "arima",
+    "ha"
+   ],
+   "ranked_shifted": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "arima",
+    "ha"
+   ]
+  },
+  "S3": {
+   "tau": 1.0,
+   "interval": [
+    1.0,
+    1.0
+   ],
+   "ranked_in_dist": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "arima",
+    "ha"
+   ],
+   "ranked_shifted": [
+    "staeformer",
+    "gwnet",
+    "dcrnn",
+    "timesfm",
+    "chronos2",
+    "arima",
+    "ha"
+   ]
+  }
+ },
+ "largest_sd": {
+  "S1": {
+   "tau": 0.3333333333333333,
+   "interval": [
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "ranked_in_dist": [
+    "gwnet",
+    "chronos2",
+    "timesfm",
+    "dcrnn",
+    "ha",
+    "arima"
+   ],
+   "ranked_shifted": [
+    "gwnet",
+    "dcrnn",
+    "ha",
+    "timesfm",
+    "chronos2",
+    "arima"
+   ]
+  },
+  "S2": {
+   "tau": 0.8666666666666666,
+   "interval": [
+    0.7333333333333333,
+    0.9999999999999999
+   ],
+   "ranked_in_dist": [
+    "gwnet",
+    "chronos2",
+    "dcrnn",
+    "timesfm",
+    "ha",
+    "arima"
+   ],
+   "ranked_shifted": [
+    "gwnet",
+    "dcrnn",
+    "chronos2",
+    "timesfm",
+    "ha",
+    "arima"
+   ]
+  },
+  "S3": {
+   "tau": 0.9999999999999999,
+   "interval": [
+    0.8666666666666666,
+    0.9999999999999999
+   ],
+   "ranked_in_dist": [
+    "gwnet",
+    "dcrnn",
+    "chronos2",
+    "timesfm",
+    "ha",
+    "arima"
+   ],
+   "ranked_shifted": [
+    "gwnet",
+    "dcrnn",
+    "chronos2",
+    "timesfm",
+    "ha",
+    "arima"
+   ]
+  }
+ }
+}

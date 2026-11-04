@@ -1,0 +1,9 @@
+# Results, tables and notebook (CPU)
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+scikit-learn==1.7.2
+h5py==3.16.0
+tables==3.10.1
+matplotlib==3.10.9
+jupyter

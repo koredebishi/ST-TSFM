@@ -1,0 +1,54 @@
+{
+  "diag": "D19 Tier-1: 2x2 pinball (train objective) on S1 pools",
+  "frozen": {
+    "val_weekday": {
+      "pinball": 250.1521,
+      "per_horizon": {
+        "3": 219.8867,
+        "6": 249.4113,
+        "12": 298.471
+      }
+    },
+    "test_weekend": {
+      "pinball": 370.9466,
+      "per_horizon": {
+        "3": 249.4407,
+        "6": 357.5629,
+        "12": 549.0646
+      }
+    },
+    "test_median_mae": 26.1515
+  },
+  "adapted": {
+    "val_weekday": {
+      "pinball": 217.3265,
+      "per_horizon": {
+        "3": 199.1044,
+        "6": 216.6426,
+        "12": 246.5918
+      }
+    },
+    "test_weekend": {
+      "pinball": 401.6808,
+      "per_horizon": {
+        "3": 262.9983,
+        "6": 377.6513,
+        "12": 608.4987
+      }
+    },
+    "test_median_mae": 27.7994,
+    "banked_pred_mean_absdiff": 0.0
+  },
+  "adapted_minus_frozen": {
+    "val_pinball_gain": 32.8256,
+    "test_pinball_gain": -30.7342
+  },
+  "VERDICT_objective_mismatch": false,
+  "TIER2_AUTHORIZED_mae_loss_retrain": false,
+  "rule": "pre-registered D19: adapted<frozen pinball on TEST -> Tier 2 GO; else transfer failure -> STOP, SCEF reframe",
+  "n_val": 512,
+  "n_test": 1902,
+  "adapter_ckpt": "results/ttra/sd_s1/adapter_best.pt",
+  "host": "b6-4",
+  "git_commit": "915bc4a"
+}

@@ -1,0 +1,278 @@
+host: b6-4  date: Sun Aug  2 20:47:23 EDT 2026
+name, memory.total [MiB]
+NVIDIA A100-SXM4-80GB, 81920 MiB
+Log directory: ./experiments/gwnet/SD-doubletransition-1-eqnorm/
+2026-08-02 20:47:25,425 - Namespace(device='cuda:0', dataset='SD', years='2019', model_name='gwnet', seed=2023, bs=64, seq_len=12, horizon=12, input_dim=3, output_dim=1, mode='train', max_epochs=100, patience=30, adj_type='doubletransition', adp_adj=1, init_dim=32, skip_dim=256, end_dim=512, lrate=0.001, wdecay=0.0001, dropout=0.3, clip_grad_value=5)
+2026-08-02 20:47:25,426 - EQNORM twin (D31/P6): per-window instance normalization on channel 0; everything else identical to run_46713086.
+2026-08-02 20:47:25,428 - Adj path: <repo>/results/shift_runs/s1_eqnorm/gwnet/largest_sd/run_47232552/data/sd/sd_rn_adj.npy
+2026-08-02 20:47:26,703 - Data shape: (35040, 716, 3)
+2026-08-02 20:47:27,690 - Sample num: 14717, Batch num: 229
+2026-08-02 20:47:28,676 - Sample num: 4873, Batch num: 76
+2026-08-02 20:47:29,664 - Sample num: 1902, Batch num: 29
+2026-08-02 20:47:32,707 - zero-code constant np.float32(-1.3414816) (store min); 563841 entries (2.2474%) zero-coded
+check supports length 2 3
+2026-08-02 20:47:33,877 - The number of parameters: 311164
+2026-08-02 20:47:33,879 - Start training!
+Mask convention: NaN-coded zero targets 9173
+2026-08-02 20:48:31,031 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:48:31,504 - Epoch: 001, Train Loss: 51.9256, Train RMSE: 87.4623, Train MAPE: 0.2964, Valid Loss: 51.9288, Valid RMSE: 108.6639, Valid MAPE: 0.2678, Train Time: 50.2336s/epoch, Valid Time: 7.3913s, LR: 1.0000e-03
+2026-08-02 20:48:31,520 - Val loss decrease from inf to 51.9288
+2026-08-02 20:49:27,478 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:49:27,955 - Epoch: 002, Train Loss: 43.0561, Train RMSE: 73.2027, Train MAPE: 0.2461, Valid Loss: 40.2791, Valid RMSE: 67.1245, Valid MAPE: 0.2316, Train Time: 49.1609s/epoch, Valid Time: 7.2742s, LR: 1.0000e-03
+2026-08-02 20:49:27,968 - Val loss decrease from 51.9288 to 40.2791
+2026-08-02 20:50:23,684 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:50:24,160 - Epoch: 003, Train Loss: 39.6549, Train RMSE: 66.7019, Train MAPE: 0.2282, Valid Loss: 37.8054, Valid RMSE: 64.6964, Valid MAPE: 0.2275, Train Time: 49.0552s/epoch, Valid Time: 7.1365s, LR: 1.0000e-03
+2026-08-02 20:50:24,173 - Val loss decrease from 40.2791 to 37.8054
+2026-08-02 20:51:19,957 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:51:20,432 - Epoch: 004, Train Loss: 37.0897, Train RMSE: 62.3287, Train MAPE: 0.2169, Valid Loss: 36.9063, Valid RMSE: 60.2260, Valid MAPE: 0.2159, Train Time: 49.1300s/epoch, Valid Time: 7.1285s, LR: 1.0000e-03
+2026-08-02 20:51:20,446 - Val loss decrease from 37.8054 to 36.9063
+2026-08-02 20:52:15,572 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:52:16,036 - Epoch: 005, Train Loss: 34.9683, Train RMSE: 59.0765, Train MAPE: 0.2055, Valid Loss: 34.2092, Valid RMSE: 57.9861, Valid MAPE: 0.2021, Train Time: 48.7573s/epoch, Valid Time: 6.8327s, LR: 1.0000e-03
+2026-08-02 20:52:16,049 - Val loss decrease from 36.9063 to 34.2092
+2026-08-02 20:53:10,189 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:53:10,651 - Epoch: 006, Train Loss: 33.4306, Train RMSE: 56.3127, Train MAPE: 0.1982, Valid Loss: 34.1691, Valid RMSE: 56.7686, Valid MAPE: 0.2045, Train Time: 47.8523s/epoch, Valid Time: 6.7497s, LR: 1.0000e-03
+2026-08-02 20:53:10,664 - Val loss decrease from 34.2092 to 34.1691
+2026-08-02 20:54:04,787 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:54:05,257 - Epoch: 007, Train Loss: 32.6376, Train RMSE: 54.9287, Train MAPE: 0.1945, Valid Loss: 31.9228, Valid RMSE: 53.1612, Valid MAPE: 0.1917, Train Time: 47.8470s/epoch, Valid Time: 6.7454s, LR: 1.0000e-03
+2026-08-02 20:54:05,270 - Val loss decrease from 34.1691 to 31.9228
+2026-08-02 20:54:59,566 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:55:00,025 - Epoch: 008, Train Loss: 31.9150, Train RMSE: 53.7118, Train MAPE: 0.1900, Valid Loss: 31.6831, Valid RMSE: 53.6698, Valid MAPE: 0.1901, Train Time: 47.8675s/epoch, Valid Time: 6.8875s, LR: 1.0000e-03
+2026-08-02 20:55:00,038 - Val loss decrease from 31.9228 to 31.6831
+2026-08-02 20:55:54,251 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:55:54,718 - Epoch: 009, Train Loss: 31.0795, Train RMSE: 52.4143, Train MAPE: 0.1851, Valid Loss: 30.4270, Valid RMSE: 51.6483, Valid MAPE: 0.1873, Train Time: 47.8597s/epoch, Valid Time: 6.8202s, LR: 1.0000e-03
+2026-08-02 20:55:54,730 - Val loss decrease from 31.6831 to 30.4270
+2026-08-02 20:56:49,187 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:56:49,657 - Epoch: 010, Train Loss: 30.4529, Train RMSE: 51.3863, Train MAPE: 0.1820, Valid Loss: 31.2095, Valid RMSE: 52.4379, Valid MAPE: 0.1849, Train Time: 48.1068s/epoch, Valid Time: 6.8195s, LR: 1.0000e-03
+2026-08-02 20:57:44,174 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:57:44,644 - Epoch: 011, Train Loss: 30.0231, Train RMSE: 50.4677, Train MAPE: 0.1800, Valid Loss: 29.2795, Valid RMSE: 49.4085, Valid MAPE: 0.1803, Train Time: 48.1252s/epoch, Valid Time: 6.8614s, LR: 1.0000e-03
+2026-08-02 20:57:44,656 - Val loss decrease from 30.4270 to 29.2795
+2026-08-02 20:58:39,615 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:58:40,086 - Epoch: 012, Train Loss: 29.2829, Train RMSE: 49.1931, Train MAPE: 0.1757, Valid Loss: 29.0190, Valid RMSE: 48.6850, Valid MAPE: 0.1768, Train Time: 48.2560s/epoch, Valid Time: 7.1738s, LR: 1.0000e-03
+2026-08-02 20:58:40,102 - Val loss decrease from 29.2795 to 29.0190
+2026-08-02 20:59:34,691 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 20:59:35,164 - Epoch: 013, Train Loss: 29.0060, Train RMSE: 48.5492, Train MAPE: 0.1744, Valid Loss: 28.5760, Valid RMSE: 48.1006, Valid MAPE: 0.1760, Train Time: 47.9263s/epoch, Valid Time: 7.1351s, LR: 1.0000e-03
+2026-08-02 20:59:35,176 - Val loss decrease from 29.0190 to 28.5760
+2026-08-02 21:00:29,593 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:00:30,061 - Epoch: 014, Train Loss: 28.6455, Train RMSE: 47.9031, Train MAPE: 0.1726, Valid Loss: 28.7409, Valid RMSE: 48.0541, Valid MAPE: 0.1757, Train Time: 47.7927s/epoch, Valid Time: 7.0920s, LR: 1.0000e-03
+2026-08-02 21:01:24,482 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:01:24,952 - Epoch: 015, Train Loss: 28.2819, Train RMSE: 47.1657, Train MAPE: 0.1707, Valid Loss: 28.1842, Valid RMSE: 46.6976, Valid MAPE: 0.1719, Train Time: 47.7821s/epoch, Valid Time: 7.1088s, LR: 1.0000e-03
+2026-08-02 21:01:24,965 - Val loss decrease from 28.5760 to 28.1842
+2026-08-02 21:02:19,941 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:02:20,413 - Epoch: 016, Train Loss: 27.9121, Train RMSE: 46.3537, Train MAPE: 0.1689, Valid Loss: 28.5851, Valid RMSE: 47.1350, Valid MAPE: 0.1821, Train Time: 47.9367s/epoch, Valid Time: 7.5107s, LR: 1.0000e-03
+2026-08-02 21:03:16,939 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:03:17,421 - Epoch: 017, Train Loss: 27.6592, Train RMSE: 45.9462, Train MAPE: 0.1677, Valid Loss: 26.9781, Valid RMSE: 45.1730, Valid MAPE: 0.1696, Train Time: 49.9316s/epoch, Valid Time: 7.0766s, LR: 1.0000e-03
+2026-08-02 21:03:17,435 - Val loss decrease from 28.1842 to 26.9781
+2026-08-02 21:04:13,830 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:04:14,300 - Epoch: 018, Train Loss: 27.1991, Train RMSE: 45.2024, Train MAPE: 0.1651, Valid Loss: 27.5035, Valid RMSE: 45.8738, Valid MAPE: 0.1721, Train Time: 49.4536s/epoch, Valid Time: 7.4114s, LR: 1.0000e-03
+2026-08-02 21:05:10,712 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:05:11,180 - Epoch: 019, Train Loss: 27.1155, Train RMSE: 44.8499, Train MAPE: 0.1648, Valid Loss: 26.9659, Valid RMSE: 45.3799, Valid MAPE: 0.1674, Train Time: 49.4941s/epoch, Valid Time: 7.3864s, LR: 1.0000e-03
+2026-08-02 21:05:11,195 - Val loss decrease from 26.9781 to 26.9659
+2026-08-02 21:06:06,887 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:06:07,359 - Epoch: 020, Train Loss: 26.8311, Train RMSE: 44.4699, Train MAPE: 0.1633, Valid Loss: 26.9513, Valid RMSE: 45.5649, Valid MAPE: 0.1673, Train Time: 48.8206s/epoch, Valid Time: 7.3437s, LR: 1.0000e-03
+2026-08-02 21:06:07,371 - Val loss decrease from 26.9659 to 26.9513
+2026-08-02 21:07:03,418 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:07:03,888 - Epoch: 021, Train Loss: 26.6987, Train RMSE: 44.2215, Train MAPE: 0.1622, Valid Loss: 27.2013, Valid RMSE: 46.6928, Valid MAPE: 0.1682, Train Time: 48.9505s/epoch, Valid Time: 7.5657s, LR: 1.0000e-03
+2026-08-02 21:07:59,776 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:08:00,255 - Epoch: 022, Train Loss: 26.4091, Train RMSE: 43.7694, Train MAPE: 0.1608, Valid Loss: 26.5827, Valid RMSE: 43.7552, Valid MAPE: 0.1640, Train Time: 48.9223s/epoch, Valid Time: 7.4442s, LR: 1.0000e-03
+2026-08-02 21:08:00,267 - Val loss decrease from 26.9513 to 26.5827
+2026-08-02 21:08:56,307 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:08:56,781 - Epoch: 023, Train Loss: 26.2110, Train RMSE: 43.4104, Train MAPE: 0.1594, Valid Loss: 26.4509, Valid RMSE: 44.0169, Valid MAPE: 0.1741, Train Time: 49.0993s/epoch, Valid Time: 7.4147s, LR: 1.0000e-03
+2026-08-02 21:08:56,794 - Val loss decrease from 26.5827 to 26.4509
+2026-08-02 21:09:51,405 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:09:51,871 - Epoch: 024, Train Loss: 26.1072, Train RMSE: 43.2548, Train MAPE: 0.1592, Valid Loss: 26.5895, Valid RMSE: 44.9189, Valid MAPE: 0.1638, Train Time: 48.1242s/epoch, Valid Time: 6.9523s, LR: 1.0000e-03
+2026-08-02 21:10:46,349 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:10:46,814 - Epoch: 025, Train Loss: 25.8967, Train RMSE: 42.9778, Train MAPE: 0.1587, Valid Loss: 25.8954, Valid RMSE: 42.9082, Valid MAPE: 0.1620, Train Time: 47.9474s/epoch, Valid Time: 6.9950s, LR: 1.0000e-03
+2026-08-02 21:10:46,826 - Val loss decrease from 26.4509 to 25.8954
+2026-08-02 21:11:41,361 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:11:41,834 - Epoch: 026, Train Loss: 25.7230, Train RMSE: 42.5876, Train MAPE: 0.1572, Valid Loss: 25.6178, Valid RMSE: 42.5022, Valid MAPE: 0.1598, Train Time: 48.0225s/epoch, Valid Time: 6.9853s, LR: 1.0000e-03
+2026-08-02 21:11:41,846 - Val loss decrease from 25.8954 to 25.6178
+2026-08-02 21:12:36,553 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:12:37,023 - Epoch: 027, Train Loss: 25.5829, Train RMSE: 42.4431, Train MAPE: 0.1565, Valid Loss: 26.0647, Valid RMSE: 42.9502, Valid MAPE: 0.1671, Train Time: 48.1481s/epoch, Valid Time: 7.0286s, LR: 1.0000e-03
+2026-08-02 21:13:32,865 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:13:33,335 - Epoch: 028, Train Loss: 25.4639, Train RMSE: 42.2402, Train MAPE: 0.1562, Valid Loss: 25.4093, Valid RMSE: 42.6356, Valid MAPE: 0.1584, Train Time: 49.2341s/epoch, Valid Time: 7.0770s, LR: 1.0000e-03
+2026-08-02 21:13:33,354 - Val loss decrease from 25.6178 to 25.4093
+2026-08-02 21:14:28,507 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:14:28,977 - Epoch: 029, Train Loss: 25.2824, Train RMSE: 41.9777, Train MAPE: 0.1541, Valid Loss: 25.3579, Valid RMSE: 42.1150, Valid MAPE: 0.1582, Train Time: 48.5277s/epoch, Valid Time: 7.0949s, LR: 1.0000e-03
+2026-08-02 21:14:28,989 - Val loss decrease from 25.4093 to 25.3579
+2026-08-02 21:15:23,602 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:15:24,069 - Epoch: 030, Train Loss: 25.1197, Train RMSE: 41.7087, Train MAPE: 0.1541, Valid Loss: 25.6228, Valid RMSE: 43.4055, Valid MAPE: 0.1608, Train Time: 47.9530s/epoch, Valid Time: 7.1263s, LR: 1.0000e-03
+2026-08-02 21:16:19,164 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:16:19,641 - Epoch: 031, Train Loss: 25.0588, Train RMSE: 41.6625, Train MAPE: 0.1529, Valid Loss: 25.1939, Valid RMSE: 42.4372, Valid MAPE: 0.1566, Train Time: 48.4539s/epoch, Valid Time: 7.1177s, LR: 1.0000e-03
+2026-08-02 21:16:19,654 - Val loss decrease from 25.3579 to 25.1939
+2026-08-02 21:17:14,448 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:17:14,915 - Epoch: 032, Train Loss: 24.9277, Train RMSE: 41.4301, Train MAPE: 0.1525, Valid Loss: 25.0377, Valid RMSE: 41.6154, Valid MAPE: 0.1576, Train Time: 48.2534s/epoch, Valid Time: 7.0075s, LR: 1.0000e-03
+2026-08-02 21:17:14,927 - Val loss decrease from 25.1939 to 25.0377
+2026-08-02 21:18:09,837 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:18:10,313 - Epoch: 033, Train Loss: 24.8173, Train RMSE: 41.2037, Train MAPE: 0.1522, Valid Loss: 24.7090, Valid RMSE: 41.1169, Valid MAPE: 0.1551, Train Time: 48.3602s/epoch, Valid Time: 7.0252s, LR: 1.0000e-03
+2026-08-02 21:18:10,325 - Val loss decrease from 25.0377 to 24.7090
+2026-08-02 21:19:05,448 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:19:05,928 - Epoch: 034, Train Loss: 24.7043, Train RMSE: 41.1173, Train MAPE: 0.1508, Valid Loss: 25.0210, Valid RMSE: 42.1278, Valid MAPE: 0.1566, Train Time: 48.4004s/epoch, Valid Time: 7.2024s, LR: 1.0000e-03
+2026-08-02 21:20:01,115 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:20:01,595 - Epoch: 035, Train Loss: 24.6380, Train RMSE: 41.0037, Train MAPE: 0.1509, Valid Loss: 25.0425, Valid RMSE: 41.1944, Valid MAPE: 0.1657, Train Time: 48.4987s/epoch, Valid Time: 7.1680s, LR: 1.0000e-03
+2026-08-02 21:20:57,537 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:20:58,023 - Epoch: 036, Train Loss: 24.4933, Train RMSE: 40.7500, Train MAPE: 0.1497, Valid Loss: 24.5442, Valid RMSE: 41.4644, Valid MAPE: 0.1544, Train Time: 49.3751s/epoch, Valid Time: 7.0521s, LR: 1.0000e-03
+2026-08-02 21:20:58,039 - Val loss decrease from 24.7090 to 24.5442
+2026-08-02 21:21:53,360 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:21:53,838 - Epoch: 037, Train Loss: 24.4845, Train RMSE: 40.6872, Train MAPE: 0.1499, Valid Loss: 24.4683, Valid RMSE: 40.9014, Valid MAPE: 0.1545, Train Time: 48.6858s/epoch, Valid Time: 7.1127s, LR: 1.0000e-03
+2026-08-02 21:21:53,850 - Val loss decrease from 24.5442 to 24.4683
+2026-08-02 21:22:49,716 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:22:50,187 - Epoch: 038, Train Loss: 24.2944, Train RMSE: 40.4322, Train MAPE: 0.1484, Valid Loss: 24.7257, Valid RMSE: 41.4938, Valid MAPE: 0.1543, Train Time: 48.9996s/epoch, Valid Time: 7.3375s, LR: 1.0000e-03
+2026-08-02 21:23:47,051 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:23:47,525 - Epoch: 039, Train Loss: 24.2972, Train RMSE: 40.4332, Train MAPE: 0.1483, Valid Loss: 24.4225, Valid RMSE: 41.2108, Valid MAPE: 0.1528, Train Time: 50.1774s/epoch, Valid Time: 7.1595s, LR: 1.0000e-03
+2026-08-02 21:23:47,539 - Val loss decrease from 24.4683 to 24.4225
+2026-08-02 21:24:43,388 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:24:43,857 - Epoch: 040, Train Loss: 24.1337, Train RMSE: 40.1409, Train MAPE: 0.1474, Valid Loss: 25.2918, Valid RMSE: 42.9029, Valid MAPE: 0.1599, Train Time: 49.0735s/epoch, Valid Time: 7.2439s, LR: 1.0000e-03
+2026-08-02 21:25:39,628 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:25:40,096 - Epoch: 041, Train Loss: 24.0598, Train RMSE: 39.9906, Train MAPE: 0.1472, Valid Loss: 24.5871, Valid RMSE: 41.9252, Valid MAPE: 0.1524, Train Time: 49.0477s/epoch, Valid Time: 7.1916s, LR: 1.0000e-03
+2026-08-02 21:26:35,950 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:26:36,416 - Epoch: 042, Train Loss: 24.0555, Train RMSE: 40.0431, Train MAPE: 0.1468, Valid Loss: 24.6077, Valid RMSE: 42.2617, Valid MAPE: 0.1529, Train Time: 49.0888s/epoch, Valid Time: 7.2303s, LR: 1.0000e-03
+2026-08-02 21:27:33,389 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:27:33,871 - Epoch: 043, Train Loss: 23.9056, Train RMSE: 39.7878, Train MAPE: 0.1462, Valid Loss: 24.2660, Valid RMSE: 41.2944, Valid MAPE: 0.1517, Train Time: 50.1899s/epoch, Valid Time: 7.2648s, LR: 1.0000e-03
+2026-08-02 21:27:33,886 - Val loss decrease from 24.4225 to 24.2660
+2026-08-02 21:28:29,682 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:28:30,155 - Epoch: 044, Train Loss: 23.9388, Train RMSE: 39.7647, Train MAPE: 0.1463, Valid Loss: 24.2372, Valid RMSE: 40.7815, Valid MAPE: 0.1514, Train Time: 48.9380s/epoch, Valid Time: 7.3316s, LR: 1.0000e-03
+2026-08-02 21:28:30,168 - Val loss decrease from 24.2660 to 24.2372
+2026-08-02 21:29:25,943 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:29:26,418 - Epoch: 045, Train Loss: 23.8087, Train RMSE: 39.5823, Train MAPE: 0.1455, Valid Loss: 23.8880, Valid RMSE: 40.0223, Valid MAPE: 0.1496, Train Time: 49.0069s/epoch, Valid Time: 7.2430s, LR: 1.0000e-03
+2026-08-02 21:29:26,430 - Val loss decrease from 24.2372 to 23.8880
+2026-08-02 21:30:22,181 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:30:22,645 - Epoch: 046, Train Loss: 23.7145, Train RMSE: 39.3836, Train MAPE: 0.1444, Valid Loss: 23.7268, Valid RMSE: 39.9011, Valid MAPE: 0.1490, Train Time: 48.9987s/epoch, Valid Time: 7.2164s, LR: 1.0000e-03
+2026-08-02 21:30:22,657 - Val loss decrease from 23.8880 to 23.7268
+2026-08-02 21:31:18,414 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:31:18,883 - Epoch: 047, Train Loss: 23.6336, Train RMSE: 39.3209, Train MAPE: 0.1438, Valid Loss: 23.7643, Valid RMSE: 39.8053, Valid MAPE: 0.1520, Train Time: 48.9802s/epoch, Valid Time: 7.2459s, LR: 1.0000e-03
+2026-08-02 21:32:14,764 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:32:15,228 - Epoch: 048, Train Loss: 23.6072, Train RMSE: 39.2635, Train MAPE: 0.1437, Valid Loss: 24.3931, Valid RMSE: 40.9231, Valid MAPE: 0.1544, Train Time: 49.0887s/epoch, Valid Time: 7.2555s, LR: 1.0000e-03
+2026-08-02 21:33:10,865 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:33:11,338 - Epoch: 049, Train Loss: 23.5912, Train RMSE: 39.1553, Train MAPE: 0.1440, Valid Loss: 23.9652, Valid RMSE: 40.1262, Valid MAPE: 0.1497, Train Time: 48.8594s/epoch, Valid Time: 7.2500s, LR: 1.0000e-03
+2026-08-02 21:34:07,051 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:34:07,528 - Epoch: 050, Train Loss: 23.4482, Train RMSE: 38.9800, Train MAPE: 0.1429, Valid Loss: 23.7995, Valid RMSE: 40.1144, Valid MAPE: 0.1492, Train Time: 48.8847s/epoch, Valid Time: 7.3050s, LR: 1.0000e-03
+2026-08-02 21:35:02,311 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:35:02,772 - Epoch: 051, Train Loss: 23.4356, Train RMSE: 39.0014, Train MAPE: 0.1431, Valid Loss: 23.5962, Valid RMSE: 39.6370, Valid MAPE: 0.1476, Train Time: 48.3400s/epoch, Valid Time: 6.9041s, LR: 1.0000e-03
+2026-08-02 21:35:02,784 - Val loss decrease from 23.7268 to 23.5962
+2026-08-02 21:35:57,326 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:35:57,786 - Epoch: 052, Train Loss: 23.4060, Train RMSE: 38.9221, Train MAPE: 0.1425, Valid Loss: 23.9612, Valid RMSE: 40.5261, Valid MAPE: 0.1542, Train Time: 48.1446s/epoch, Valid Time: 6.8571s, LR: 1.0000e-03
+2026-08-02 21:36:52,556 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:36:53,022 - Epoch: 053, Train Loss: 23.2632, Train RMSE: 38.6928, Train MAPE: 0.1421, Valid Loss: 24.0836, Valid RMSE: 39.9755, Valid MAPE: 0.1510, Train Time: 48.3198s/epoch, Valid Time: 6.9162s, LR: 1.0000e-03
+2026-08-02 21:37:50,399 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:37:51,440 - Epoch: 054, Train Loss: 23.3624, Train RMSE: 38.7826, Train MAPE: 0.1423, Valid Loss: 24.0844, Valid RMSE: 40.8930, Valid MAPE: 0.1530, Train Time: 50.8592s/epoch, Valid Time: 7.5581s, LR: 1.0000e-03
+2026-08-02 21:38:46,833 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:38:47,499 - Epoch: 055, Train Loss: 23.2810, Train RMSE: 38.6874, Train MAPE: 0.1418, Valid Loss: 23.5872, Valid RMSE: 39.8963, Valid MAPE: 0.1487, Train Time: 48.8524s/epoch, Valid Time: 7.2066s, LR: 1.0000e-03
+2026-08-02 21:38:47,512 - Val loss decrease from 23.5962 to 23.5872
+2026-08-02 21:39:43,020 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:39:43,972 - Epoch: 056, Train Loss: 23.1922, Train RMSE: 38.5576, Train MAPE: 0.1411, Valid Loss: 23.8686, Valid RMSE: 39.8851, Valid MAPE: 0.1472, Train Time: 48.8676s/epoch, Valid Time: 7.5924s, LR: 1.0000e-03
+2026-08-02 21:40:39,894 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:40:40,849 - Epoch: 057, Train Loss: 23.2294, Train RMSE: 38.4964, Train MAPE: 0.1417, Valid Loss: 23.5344, Valid RMSE: 39.8286, Valid MAPE: 0.1474, Train Time: 49.2950s/epoch, Valid Time: 7.5821s, LR: 1.0000e-03
+2026-08-02 21:40:40,864 - Val loss decrease from 23.5872 to 23.5344
+2026-08-02 21:41:36,731 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:41:37,190 - Epoch: 058, Train Loss: 23.1417, Train RMSE: 38.4176, Train MAPE: 0.1409, Valid Loss: 23.5968, Valid RMSE: 40.0176, Valid MAPE: 0.1471, Train Time: 49.2601s/epoch, Valid Time: 7.0654s, LR: 1.0000e-03
+2026-08-02 21:42:33,290 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:42:33,762 - Epoch: 059, Train Loss: 23.0563, Train RMSE: 38.2359, Train MAPE: 0.1405, Valid Loss: 23.9931, Valid RMSE: 41.1428, Valid MAPE: 0.1526, Train Time: 49.3512s/epoch, Valid Time: 7.2208s, LR: 1.0000e-03
+2026-08-02 21:43:29,760 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:43:30,572 - Epoch: 060, Train Loss: 23.0420, Train RMSE: 38.2388, Train MAPE: 0.1403, Valid Loss: 23.6381, Valid RMSE: 39.4911, Valid MAPE: 0.1497, Train Time: 49.3611s/epoch, Valid Time: 7.4483s, LR: 1.0000e-03
+2026-08-02 21:44:27,382 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:44:28,401 - Epoch: 061, Train Loss: 22.9900, Train RMSE: 38.1403, Train MAPE: 0.1403, Valid Loss: 23.4121, Valid RMSE: 40.0413, Valid MAPE: 0.1459, Train Time: 49.9190s/epoch, Valid Time: 7.9096s, LR: 1.0000e-03
+2026-08-02 21:44:28,418 - Val loss decrease from 23.5344 to 23.4121
+2026-08-02 21:45:25,076 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:45:26,072 - Epoch: 062, Train Loss: 22.9385, Train RMSE: 38.0343, Train MAPE: 0.1393, Valid Loss: 23.2631, Valid RMSE: 38.9455, Valid MAPE: 0.1455, Train Time: 49.7597s/epoch, Valid Time: 7.8936s, LR: 1.0000e-03
+2026-08-02 21:45:26,087 - Val loss decrease from 23.4121 to 23.2631
+2026-08-02 21:46:22,562 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:46:23,548 - Epoch: 063, Train Loss: 22.8984, Train RMSE: 37.9664, Train MAPE: 0.1393, Valid Loss: 23.5747, Valid RMSE: 39.5673, Valid MAPE: 0.1474, Train Time: 49.7355s/epoch, Valid Time: 7.7253s, LR: 1.0000e-03
+2026-08-02 21:47:19,985 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:47:20,813 - Epoch: 064, Train Loss: 22.8627, Train RMSE: 37.9266, Train MAPE: 0.1389, Valid Loss: 23.7576, Valid RMSE: 40.1364, Valid MAPE: 0.1481, Train Time: 49.6734s/epoch, Valid Time: 7.5920s, LR: 1.0000e-03
+2026-08-02 21:48:17,085 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:48:18,035 - Epoch: 065, Train Loss: 22.8190, Train RMSE: 37.8415, Train MAPE: 0.1386, Valid Loss: 23.2271, Valid RMSE: 39.1698, Valid MAPE: 0.1452, Train Time: 49.3925s/epoch, Valid Time: 7.8290s, LR: 1.0000e-03
+2026-08-02 21:48:18,049 - Val loss decrease from 23.2631 to 23.2271
+2026-08-02 21:49:22,504 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:49:23,202 - Epoch: 066, Train Loss: 22.7888, Train RMSE: 37.7929, Train MAPE: 0.1388, Valid Loss: 23.8137, Valid RMSE: 40.9364, Valid MAPE: 0.1464, Train Time: 54.2750s/epoch, Valid Time: 10.8776s, LR: 1.0000e-03
+2026-08-02 21:50:19,244 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:50:20,196 - Epoch: 067, Train Loss: 22.7619, Train RMSE: 37.7148, Train MAPE: 0.1385, Valid Loss: 23.5945, Valid RMSE: 40.6001, Valid MAPE: 0.1455, Train Time: 49.2508s/epoch, Valid Time: 7.7429s, LR: 1.0000e-03
+2026-08-02 21:51:16,311 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:51:17,226 - Epoch: 068, Train Loss: 22.7248, Train RMSE: 37.6920, Train MAPE: 0.1384, Valid Loss: 23.4494, Valid RMSE: 39.8721, Valid MAPE: 0.1467, Train Time: 49.2982s/epoch, Valid Time: 7.7311s, LR: 1.0000e-03
+2026-08-02 21:52:13,596 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:52:14,588 - Epoch: 069, Train Loss: 22.6893, Train RMSE: 37.6159, Train MAPE: 0.1380, Valid Loss: 23.0943, Valid RMSE: 39.3691, Valid MAPE: 0.1442, Train Time: 49.3799s/epoch, Valid Time: 7.9822s, LR: 1.0000e-03
+2026-08-02 21:52:14,603 - Val loss decrease from 23.2271 to 23.0943
+2026-08-02 21:53:11,246 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:53:12,367 - Epoch: 070, Train Loss: 22.6412, Train RMSE: 37.5624, Train MAPE: 0.1376, Valid Loss: 23.3442, Valid RMSE: 39.0555, Valid MAPE: 0.1449, Train Time: 49.6772s/epoch, Valid Time: 8.0865s, LR: 1.0000e-03
+2026-08-02 21:54:10,449 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:54:11,260 - Epoch: 071, Train Loss: 22.6638, Train RMSE: 37.5189, Train MAPE: 0.1376, Valid Loss: 23.2147, Valid RMSE: 38.8899, Valid MAPE: 0.1446, Train Time: 51.2725s/epoch, Valid Time: 7.6194s, LR: 1.0000e-03
+2026-08-02 21:55:07,535 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:55:08,543 - Epoch: 072, Train Loss: 22.6140, Train RMSE: 37.4501, Train MAPE: 0.1374, Valid Loss: 23.6765, Valid RMSE: 39.9537, Valid MAPE: 0.1484, Train Time: 49.5088s/epoch, Valid Time: 7.7739s, LR: 1.0000e-03
+2026-08-02 21:56:04,861 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:56:05,740 - Epoch: 073, Train Loss: 22.5752, Train RMSE: 37.3820, Train MAPE: 0.1374, Valid Loss: 22.9689, Valid RMSE: 38.3282, Valid MAPE: 0.1429, Train Time: 49.5015s/epoch, Valid Time: 7.6954s, LR: 1.0000e-03
+2026-08-02 21:56:05,754 - Val loss decrease from 23.0943 to 22.9689
+2026-08-02 21:57:03,553 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:57:04,544 - Epoch: 074, Train Loss: 22.5701, Train RMSE: 37.3780, Train MAPE: 0.1373, Valid Loss: 23.4909, Valid RMSE: 40.1258, Valid MAPE: 0.1438, Train Time: 51.0106s/epoch, Valid Time: 7.7792s, LR: 1.0000e-03
+2026-08-02 21:58:01,107 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:58:02,252 - Epoch: 075, Train Loss: 22.4899, Train RMSE: 37.2471, Train MAPE: 0.1368, Valid Loss: 23.1310, Valid RMSE: 39.4439, Valid MAPE: 0.1456, Train Time: 49.7107s/epoch, Valid Time: 7.9964s, LR: 1.0000e-03
+2026-08-02 21:58:58,965 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:59:00,112 - Epoch: 076, Train Loss: 22.4502, Train RMSE: 37.1825, Train MAPE: 0.1366, Valid Loss: 22.9737, Valid RMSE: 38.8793, Valid MAPE: 0.1423, Train Time: 49.8531s/epoch, Valid Time: 8.0059s, LR: 1.0000e-03
+2026-08-02 21:59:56,717 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 21:59:57,871 - Epoch: 077, Train Loss: 22.4126, Train RMSE: 37.1576, Train MAPE: 0.1361, Valid Loss: 22.8236, Valid RMSE: 38.7303, Valid MAPE: 0.1426, Train Time: 49.6904s/epoch, Valid Time: 8.0684s, LR: 1.0000e-03
+2026-08-02 21:59:57,885 - Val loss decrease from 22.9689 to 22.8236
+2026-08-02 22:00:54,504 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:00:55,496 - Epoch: 078, Train Loss: 22.4485, Train RMSE: 37.1504, Train MAPE: 0.1365, Valid Loss: 22.8965, Valid RMSE: 39.0539, Valid MAPE: 0.1425, Train Time: 49.7892s/epoch, Valid Time: 7.8216s, LR: 1.0000e-03
+2026-08-02 22:01:52,159 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:01:53,145 - Epoch: 079, Train Loss: 22.3672, Train RMSE: 37.0775, Train MAPE: 0.1358, Valid Loss: 23.2596, Valid RMSE: 39.3143, Valid MAPE: 0.1456, Train Time: 49.8495s/epoch, Valid Time: 7.7991s, LR: 1.0000e-03
+2026-08-02 22:02:49,736 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:02:50,764 - Epoch: 080, Train Loss: 22.3789, Train RMSE: 37.0533, Train MAPE: 0.1355, Valid Loss: 22.7217, Valid RMSE: 38.2858, Valid MAPE: 0.1462, Train Time: 49.8157s/epoch, Valid Time: 7.8028s, LR: 1.0000e-03
+2026-08-02 22:02:50,777 - Val loss decrease from 22.8236 to 22.7217
+2026-08-02 22:03:47,256 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:03:48,307 - Epoch: 081, Train Loss: 22.3022, Train RMSE: 36.9183, Train MAPE: 0.1355, Valid Loss: 23.4603, Valid RMSE: 39.5848, Valid MAPE: 0.1441, Train Time: 49.6797s/epoch, Valid Time: 7.8501s, LR: 1.0000e-03
+2026-08-02 22:04:45,098 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:04:46,163 - Epoch: 082, Train Loss: 22.2847, Train RMSE: 36.8775, Train MAPE: 0.1352, Valid Loss: 23.0851, Valid RMSE: 39.2815, Valid MAPE: 0.1429, Train Time: 49.9426s/epoch, Valid Time: 7.9122s, LR: 1.0000e-03
+2026-08-02 22:05:42,685 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:05:43,745 - Epoch: 083, Train Loss: 22.3070, Train RMSE: 36.9206, Train MAPE: 0.1353, Valid Loss: 22.8244, Valid RMSE: 38.2902, Valid MAPE: 0.1446, Train Time: 49.7374s/epoch, Valid Time: 7.8444s, LR: 1.0000e-03
+2026-08-02 22:06:40,225 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:06:41,299 - Epoch: 084, Train Loss: 22.2665, Train RMSE: 36.8392, Train MAPE: 0.1352, Valid Loss: 23.0981, Valid RMSE: 39.1423, Valid MAPE: 0.1491, Train Time: 49.6681s/epoch, Valid Time: 7.8856s, LR: 1.0000e-03
+2026-08-02 22:07:37,791 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:07:38,800 - Epoch: 085, Train Loss: 22.2151, Train RMSE: 36.8122, Train MAPE: 0.1347, Valid Loss: 22.5476, Valid RMSE: 38.0214, Valid MAPE: 0.1409, Train Time: 49.6773s/epoch, Valid Time: 7.8226s, LR: 1.0000e-03
+2026-08-02 22:07:38,819 - Val loss decrease from 22.7217 to 22.5476
+2026-08-02 22:08:35,537 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:08:36,559 - Epoch: 086, Train Loss: 22.1966, Train RMSE: 36.6887, Train MAPE: 0.1349, Valid Loss: 22.8114, Valid RMSE: 38.4515, Valid MAPE: 0.1413, Train Time: 49.9089s/epoch, Valid Time: 7.8303s, LR: 1.0000e-03
+2026-08-02 22:09:32,860 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:09:33,937 - Epoch: 087, Train Loss: 22.1601, Train RMSE: 36.7162, Train MAPE: 0.1344, Valid Loss: 23.9394, Valid RMSE: 40.9873, Valid MAPE: 0.1477, Train Time: 49.5416s/epoch, Valid Time: 7.8369s, LR: 1.0000e-03
+2026-08-02 22:10:31,568 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:10:32,691 - Epoch: 088, Train Loss: 22.1673, Train RMSE: 36.7062, Train MAPE: 0.1346, Valid Loss: 22.8190, Valid RMSE: 38.1752, Valid MAPE: 0.1416, Train Time: 50.8284s/epoch, Valid Time: 7.9248s, LR: 1.0000e-03
+2026-08-02 22:11:28,624 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:11:29,711 - Epoch: 089, Train Loss: 22.1318, Train RMSE: 36.5829, Train MAPE: 0.1347, Valid Loss: 22.8387, Valid RMSE: 38.8067, Valid MAPE: 0.1446, Train Time: 49.1641s/epoch, Valid Time: 7.8554s, LR: 1.0000e-03
+2026-08-02 22:12:25,766 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:12:26,882 - Epoch: 090, Train Loss: 22.1318, Train RMSE: 36.5998, Train MAPE: 0.1345, Valid Loss: 22.7992, Valid RMSE: 38.5151, Valid MAPE: 0.1430, Train Time: 49.3013s/epoch, Valid Time: 7.8693s, LR: 1.0000e-03
+2026-08-02 22:13:22,932 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:13:24,035 - Epoch: 091, Train Loss: 22.1134, Train RMSE: 36.5704, Train MAPE: 0.1341, Valid Loss: 22.7627, Valid RMSE: 38.3252, Valid MAPE: 0.1408, Train Time: 49.2578s/epoch, Valid Time: 7.8947s, LR: 1.0000e-03
+2026-08-02 22:14:22,411 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:14:23,542 - Epoch: 092, Train Loss: 22.0782, Train RMSE: 36.5585, Train MAPE: 0.1340, Valid Loss: 22.5321, Valid RMSE: 37.9448, Valid MAPE: 0.1407, Train Time: 51.5784s/epoch, Valid Time: 7.9291s, LR: 1.0000e-03
+2026-08-02 22:14:23,556 - Val loss decrease from 22.5476 to 22.5321
+2026-08-02 22:15:19,665 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:15:20,797 - Epoch: 093, Train Loss: 22.0680, Train RMSE: 36.4948, Train MAPE: 0.1339, Valid Loss: 22.8862, Valid RMSE: 38.5339, Valid MAPE: 0.1429, Train Time: 49.3731s/epoch, Valid Time: 7.8671s, LR: 1.0000e-03
+2026-08-02 22:16:16,840 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:16:17,974 - Epoch: 094, Train Loss: 22.0562, Train RMSE: 36.4459, Train MAPE: 0.1343, Valid Loss: 22.5268, Valid RMSE: 37.7110, Valid MAPE: 0.1411, Train Time: 49.2373s/epoch, Valid Time: 7.9395s, LR: 1.0000e-03
+2026-08-02 22:16:17,988 - Val loss decrease from 22.5321 to 22.5268
+2026-08-02 22:17:14,155 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:17:15,293 - Epoch: 095, Train Loss: 22.0294, Train RMSE: 36.4158, Train MAPE: 0.1336, Valid Loss: 22.5537, Valid RMSE: 38.0952, Valid MAPE: 0.1402, Train Time: 49.4049s/epoch, Valid Time: 7.8998s, LR: 1.0000e-03
+2026-08-02 22:18:11,717 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:18:12,524 - Epoch: 096, Train Loss: 21.9526, Train RMSE: 36.3348, Train MAPE: 0.1333, Valid Loss: 22.5562, Valid RMSE: 37.9390, Valid MAPE: 0.1403, Train Time: 49.6030s/epoch, Valid Time: 7.6270s, LR: 1.0000e-03
+2026-08-02 22:19:08,371 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:19:08,849 - Epoch: 097, Train Loss: 21.9342, Train RMSE: 36.2683, Train MAPE: 0.1330, Valid Loss: 22.9320, Valid RMSE: 39.2578, Valid MAPE: 0.1437, Train Time: 49.1402s/epoch, Valid Time: 7.1850s, LR: 1.0000e-03
+2026-08-02 22:20:04,567 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:20:05,048 - Epoch: 098, Train Loss: 21.9231, Train RMSE: 36.2688, Train MAPE: 0.1330, Valid Loss: 22.7094, Valid RMSE: 38.9056, Valid MAPE: 0.1403, Train Time: 48.9123s/epoch, Valid Time: 7.2864s, LR: 1.0000e-03
+2026-08-02 22:21:00,754 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:21:01,232 - Epoch: 099, Train Loss: 21.9767, Train RMSE: 36.3501, Train MAPE: 0.1333, Valid Loss: 22.3997, Valid RMSE: 37.5739, Valid MAPE: 0.1392, Train Time: 48.9373s/epoch, Valid Time: 7.2458s, LR: 1.0000e-03
+2026-08-02 22:21:01,254 - Val loss decrease from 22.5268 to 22.3997
+2026-08-02 22:21:56,990 - val: masked (NaN) target fraction 2.9182%
+2026-08-02 22:21:57,469 - Epoch: 100, Train Loss: 21.8683, Train RMSE: 36.2061, Train MAPE: 0.1327, Valid Loss: 22.9721, Valid RMSE: 39.1606, Valid MAPE: 0.1407, Train Time: 48.9914s/epoch, Valid Time: 7.2238s, LR: 1.0000e-03
+2026-08-02 22:22:00,028 - test: masked (NaN) target fraction 3.2352%
+Check mask value tensor(nan)
+2026-08-02 22:22:00,047 - Horizon 1, Test MAE: 12.4348, Test RMSE: 18.9516, Test MAPE: 0.0834
+2026-08-02 22:22:00,055 - Horizon 2, Test MAE: 15.3367, Test RMSE: 23.4053, Test MAPE: 0.1018
+2026-08-02 22:22:00,064 - Horizon 3, Test MAE: 18.0934, Test RMSE: 27.4469, Test MAPE: 0.1196
+2026-08-02 22:22:00,072 - Horizon 4, Test MAE: 20.9580, Test RMSE: 31.5801, Test MAPE: 0.1384
+2026-08-02 22:22:00,080 - Horizon 5, Test MAE: 24.2642, Test RMSE: 36.3578, Test MAPE: 0.1618
+2026-08-02 22:22:00,089 - Horizon 6, Test MAE: 27.3270, Test RMSE: 40.9120, Test MAPE: 0.1834
+2026-08-02 22:22:00,097 - Horizon 7, Test MAE: 29.9498, Test RMSE: 45.0105, Test MAPE: 0.2022
+2026-08-02 22:22:00,105 - Horizon 8, Test MAE: 32.6108, Test RMSE: 49.0690, Test MAPE: 0.2212
+2026-08-02 22:22:00,114 - Horizon 9, Test MAE: 35.4556, Test RMSE: 53.1353, Test MAPE: 0.2445
+2026-08-02 22:22:00,122 - Horizon 10, Test MAE: 38.4527, Test RMSE: 57.4849, Test MAPE: 0.2691
+2026-08-02 22:22:00,130 - Horizon 11, Test MAE: 41.0492, Test RMSE: 61.0542, Test MAPE: 0.2908
+2026-08-02 22:22:00,138 - Horizon 12, Test MAE: 43.4022, Test RMSE: 63.9932, Test MAPE: 0.3136
+2026-08-02 22:22:00,139 - Average Test MAE: 28.2779, Test RMSE: 42.3667, Test MAPE: 0.1941
+exit: 0  run_dir: <repo>/results/shift_runs/s1_eqnorm/gwnet/largest_sd/run_47232552
