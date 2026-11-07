@@ -231,5 +231,30 @@
    ],
    "sha256": "36b15d56df0e033ab7eca8c202027c918d75babfbb1a2d14b7a496afee96f23d",
    "note": "validation windows (router selection)"
+  },
+  {
+   "file": "chronos2/largest_sd/y_pred_ctx192.npy",
+   "shape": [7004, 12, 716],
+   "sha256": "c722bc7b40c7a0db79b21c03347a6f752a9bbdd8a625ad76516f1dbb06196a73",
+   "note": "test windows with a 192-step context instead of 512 (Table V)"
+  },
+  {
+   "file": "chronos2/largest_sd/y_pred_ctx96.npy",
+   "shape": [7004, 12, 716],
+   "sha256": "c8776c05be97d0e48622bbbe399fbb6e6abc36992895ca18466fa2e933bc11fa",
+   "note": "test windows with a 96-step context instead of 512 (Table V)"
+  },
+  {
+   "file": "timesfm/largest_sd/y_pred_ctx192.npy",
+   "shape": [7004, 12, 716],
+   "sha256": "478b35fffc6b1cc5682ef910e2944238ecc5c4ea975335bc98909db0ae5f3679",
+   "note": "test windows with a 192-step context instead of 512 (Table V)"
+  },
+  {
+   "file": "timesfm/largest_sd/y_pred_ctx96.npy",
+   "shape": [7004, 12, 716],
+   "sha256": "0819f38908ba7f8918f333db0696d98abcf8b36cc5a640c54a603e6252ac5fad",
+   "note": "test windows with a 96-step context instead of 512 (Table V)"
   }
- ]}
+ ]
+}

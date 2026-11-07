@@ -76,6 +76,7 @@ def main():
     tm = lambda m, d: load(RUNS / "test_metrics" / m / f"{d}.json")
     gate = load(RUNS / "ttra/w6_gate.json")
     pin = load(RUNS / "ttra/w6_diag_pinball.json")
+    ctx = load(RES / "context_length.json")
 
     print("\nAbstract and introduction")
     check("Abstract", "largest frozen-model degradation (%)", "29", pct(avg[("largest_sd", "S1", "chronos2")]))
@@ -214,6 +215,10 @@ def main():
             ("Chronos-2, none", "26.14", f2(gate["frozen_shift"]["avg"])),
             ("TimesFM, none", "23.82", f2(sd["timesfm"]["s1"])),
             ("Chronos-2, TTRA adaptation", "27.80", f2(gate["adapted"]["avg"])),
+            ("Chronos-2, 48-hour context", "26.80", f2(ctx["chronos2"]["192"]["weekend"])),
+            ("Chronos-2, 24-hour context", "29.76", f2(ctx["chronos2"]["96"]["weekend"])),
+            ("TimesFM, 48-hour context", "23.11", f2(ctx["timesfm"]["192"]["weekend"])),
+            ("TimesFM, 24-hour context", "33.15", f2(ctx["timesfm"]["96"]["weekend"])),
             ("Graph WaveNet, weekday-only retraining", "24.67 ± 1.79", mean_sd(gwnet_weekday)),
             ("Graph WaveNet, weekend-only training", "15.60 ± 0.13", mean_sd(run("gwnet_weekend"))),
             ("Graph WaveNet, standard subset", "15.35 ± 0.27", mean_sd(run("gwnet_std_match"))),
@@ -223,6 +228,14 @@ def main():
             ("DCRNN, weekend-only training", "19.28 ± 1.55", mean_sd(run("dcrnn_weekend"))),
             ("Regime router", "21.57", f2(router["test"]["weekend"]))):
         check("Table V", what, paper, files)
+    check("IV-E", "48 h: weekend MAE changes by about 3%, both", "3/3",
+          "/".join(pct(abs(ctx[m]["192"]["weekend"] / ctx[m]["512"]["weekend"] - 1)) for m in FROZEN))
+    check("IV-E", "48 h: weekend MAE stays above HA, both", "yes",
+          "yes" if all(ctx[m]["192"]["weekend"] > sd["ha"]["s1"] for m in FROZEN) else "no")
+    check("IV-E", "24 h: weekend MAE rises, both models", "yes",
+          "yes" if all(ctx[m]["96"]["weekend"] > ctx[m]["512"]["weekend"] for m in FROZEN) else "no")
+    check("IV-E", "24 h: weekday MAE more than doubles, both", "yes",
+          "yes" if all(ctx[m]["96"]["weekday"] > 2 * ctx[m]["512"]["weekday"] for m in FROZEN) else "no")
     check("IV-E", "standard GWNet / DCRNN on the weekend pool", "16.21/17.73",
           f"{f2(sd['gwnet']['s1'])}/{f2(sd['dcrnn']['s1'])}")
     fv, av = pin["frozen"]["val_weekday"]["pinball"], pin["adapted"]["val_weekday"]["pinball"]

@@ -48,7 +48,7 @@ PREDICTIONS.md        predictions registered before the experiments
 | Table II (severity, degradation) | `severity.json`, `degradation.json` | `src/severity.py`, `src/degradation.py` |
 | Table III (MAE of every model) | `mae_grid.json` | `scripts/make_results.py` |
 | Table IV (Kendall tau) | `rankings.json`, `day_block.json` | `src/ranking.py` |
-| Table V (weekend interventions) | `runs/retraining/`, `runs/logs/`, `runs/ttra/`, `router.json` | `forecasting/`, `src/router.py` |
+| Table V (weekend interventions) | `runs/retraining/`, `runs/logs/`, `runs/ttra/`, `router.json`, `context_length.json` | `forecasting/`, `src/router.py` |
 | Table VI (predictions) | see `PREDICTIONS.md` | |
 | Severity vs degradation (IV-C) | `correlations.json`, `skill_change.json`, `standardized_severity.json`, `relative_metrics.json` | `src/stats.py`, `src/severity.py`, `src/degradation.py` |
 | Saturday vs Sunday (IV-E) | `weekend_days.json` | `src/splits.py` |

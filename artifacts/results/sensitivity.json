@@ -148,11 +148,8 @@
     }
    },
    "narrow [7,9)+[16,18)": {
-    "tau": -0.3333333333333333,
-    "degradation": {
-     "chronos2": NaN,
-     "timesfm": NaN
-    }
+    "tau": null,
+    "note": "no window has all 12 targets in the peak window"
    },
    "later [8,11)+[17,20)": {
     "tau": 0.9999999999999999,

@@ -177,6 +177,24 @@ def follow_ups(sev, deg):
     save("weekend_days", days)
 
 
+def context_length():
+    """LargeST-SD weekday and weekend MAE of the frozen models with 512, 192
+    and 96 steps of context (128, 48 and 24 hours; Table V)."""
+    y_true = test_targets("largest_sd")
+    weekday, weekend = test_pools("largest_sd", "S1")
+    out = {}
+    for m in FROZEN:
+        out[m] = {}
+        for steps in (512, 192, 96):
+            pred = load_forecast(m, "largest_sd", "test" if steps == 512 else f"ctx{steps}")
+            out[m][str(steps)] = {"weekday": mae(y_true[weekday], pred[weekday]),
+                                  "weekend": mae(y_true[weekend], pred[weekend])}
+    print("\nLargeST-SD MAE (weekday / weekend) by context length")
+    for m in FROZEN:
+        print(f"  {m:9}" + "  ".join(f"{s}: {v['weekday']:.2f} / {v['weekend']:.2f}" for s, v in out[m].items()))
+    save("context_length", out)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     sev, deg, skill = table2()
@@ -187,6 +205,7 @@ def main():
     save("correlations", correlations(sev, deg, skill))
     table3_and_4()
     follow_ups(sev, deg)
+    context_length()
 
 
 if __name__ == "__main__":

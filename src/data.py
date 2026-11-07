@@ -110,7 +110,9 @@ def sensor_coords(name):
 def load_forecast(model, name, part="test"):
     """Saved forecasts of one model, shape (windows, 12, sensors).
 
-    part="val" loads the validation forecasts (used by the router).
+    part="val" loads the validation forecasts (used by the router);
+    part="ctx96" or "ctx192" loads test forecasts made with a shorter
+    context (Table V).
     Some trained models pad their last test batch, so extra rows at the
     end are cut. LargeST-SD runs of the trained graph models drop the last
     partial batch instead, so they can be a little shorter than the test
@@ -118,6 +120,6 @@ def load_forecast(model, name, part="test"):
     """
     file = "y_pred.npy" if part == "test" else f"y_pred_{part}.npy"
     pred = np.load(FORECAST_DIR / model / name / file).astype(np.float64)
-    pred = pred[:len(window_anchors(name)[part])]
+    pred = pred[:len(window_anchors(name)["val" if part == "val" else "test"])]
     assert pred.shape[1] == TARGET_STEPS, (model, name, pred.shape)
     return pred
