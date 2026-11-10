@@ -17,10 +17,10 @@ pip install -r requirements/analysis.txt
 python scripts/make_tables.py
 ```
 
-`make_tables.py` prints every table and number in the paper from the
-files in `artifacts/results/`, each next to the value the paper prints.
+`make_tables.py` checks 90 reported values against files in
+`artifacts/results/`, showing each paper value beside the released value.
 It runs in seconds on CPU and needs no data, GPU or model weights.
-`notebook.ipynb` shows the same tables step by step.
+`paper_results_walkthrough.ipynb` explains the main tables and figures step by step.
 
 ## Layout
 
@@ -36,7 +36,7 @@ artifacts/
   figures/            the figures as printed in the paper
   manifest.json       the saved forecasts (not included), with hashes
 forecasting/          the code that produced the forecasts and the adapter
-notebook.ipynb        the tables from artifacts/results/
+paper_results_walkthrough.ipynb  annotated tables and figures from artifacts/results/
 PREDICTIONS.md        predictions registered before the experiments
 ```
 

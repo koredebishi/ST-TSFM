@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Print the paper's tables and numbers from artifacts/results/.
+"""Check selected reported values against artifacts/results/.
 
 Each line shows the value as the paper prints it next to the value in the
 result files, rounded the same way. Needs no data, GPU or forecasts, and
@@ -284,7 +284,7 @@ def main():
         for f in FAILED:
             print("  ", f)
         sys.exit(1)
-    print("Every number matches the paper.")
+    print("All checked values match the released result files.")
 
 
 if __name__ == "__main__":
