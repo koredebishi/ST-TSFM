@@ -94,3 +94,19 @@ WaveNet and STAEformer were trained with their authors' code (links in
 ## License
 
 MIT, see `LICENSE`. Third-party code and data: `THIRD_PARTY_NOTICES.md`.
+
+## Citation
+
+If you use this code or these results, please cite:
+
+```bibtex
+@inproceedings{bishi2026severe,
+  title     = {Severe but Harmless: Stress-Testing Shift Severity for
+               Frozen Time-Series Forecasters},
+  author    = {Bishi, Korede R. and Okonkwo, Dominic and Okunoye, Adetayo},
+  booktitle = {IEEE International Conference on Big Data (BigData)},
+  year      = {2026}
+}
+```
+
+The DOI will be added once the paper appears in IEEE Xplore.

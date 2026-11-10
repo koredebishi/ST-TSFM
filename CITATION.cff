@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters"
+authors:
+  - family-names: Bishi
+    given-names: Korede R.
+  - family-names: Okonkwo
+    given-names: Dominic
+  - family-names: Okunoye
+    given-names: Adetayo
+repository-code: "https://github.com/koredebishi/ST-TSFM"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Severe but Harmless: Stress-Testing Shift Severity for Frozen Time-Series Forecasters"
+  authors:
+    - family-names: Bishi
+      given-names: Korede R.
+    - family-names: Okonkwo
+      given-names: Dominic
+    - family-names: Okunoye
+      given-names: Adetayo
+  conference:
+    name: "IEEE International Conference on Big Data (BigData)"
+  year: 2026
